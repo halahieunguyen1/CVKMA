@@ -30,7 +30,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->routes(function () {
             $apis = glob(base_path() . '/routes/api/*.php');
             foreach ($apis as $api) {
-                Route::prefix('api')
+                Route::prefix('api/' . basename($api, ".php"))
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group($api);

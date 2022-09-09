@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 // Auth::routes(['verify' => true]);
 Route::get('test1',function(Request $request) {
-    return 1;
+    return 2;
 });
 
