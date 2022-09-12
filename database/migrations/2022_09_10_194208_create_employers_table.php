@@ -30,7 +30,7 @@ return new class extends Migration
             $table->tinyInteger('type')->default(EmployerEnum::TYPE_NORMAL);
 
             //foreign key
-            $table->int('company_id');//pii
+            $table->integer('company_id');//pii
 
             $table->timestamps();
         });

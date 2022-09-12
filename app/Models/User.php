@@ -12,6 +12,39 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
 {
     use HasFactory, Notifiable;
 
+    protected $fillable = [
+        'id',
+        'created_at',
+        'updated_at',
+        'first_name',
+        'last_name',
+        'address',
+        'dob',
+        'email',
+        'phone',
+        'password',
+        'gender',
+        'avatar',
+        'type',
+        'premium_end_at',
+        'email_verified_at',
+        'status',
+        'admin_note',
+        'admin_note_id',
+        'admin_note_at',
+        'ban_admin_id',
+        'ban_note',
+        'banned_at',
+        'status_find_job',
+        'job_type',
+        'profession',
+        'exp',
+        'level',
+        'salary',
+        'english_level',
+        'desire',
+        'introduce',
+    ];
     /**
      * The attributes that are mass assignable.
      *

@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_fields', function (Blueprint $table) {
+        Schema::create('job_fields', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index();
+            $table->integer('job_id')->index();
             $table->integer('field_id');
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_fields');
+        Schema::dropIfExists('job_fields');
     }
 };

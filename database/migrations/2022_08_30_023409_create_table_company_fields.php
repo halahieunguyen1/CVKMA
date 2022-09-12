@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('company_fields', function (Blueprint $table) {
             $table->id();
-            $table->int('company_id')->index();
-            $table->int('field_id');
+            $table->integer('company_id')->index();
+            $table->integer('field_id');
         });
     }
 

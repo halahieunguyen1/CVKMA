@@ -13,10 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_fields', function (Blueprint $table) {
+        Schema::create('company_images', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index();
-            $table->integer('field_id');
+            $table->integer('company_id')->index();
+            $table->integer('url')->index();
+            $table->integer('caption')->index();
         });
     }
 
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_fields');
+        Schema::dropIfExists('company_images');
     }
 };
