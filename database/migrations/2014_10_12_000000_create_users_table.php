@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('email')->unique()->index();//pii
             $table->string('phone')->unique()->index();//pii
             $table->string('password');
+            $table->boolean('gender');
             $table->string('avatar')->nullable();
             $table->tinyInteger('type')->default(UserEnum::TYPE_NORMAL);
             $table->date('premium_end_at')->nullable();
@@ -32,11 +33,11 @@ return new class extends Migration
             $table->text('admin_note')->nullable();
             $table->integer('admin_note_id')->nullable();
             $table->dateTime('admin_note_at')->nullable();
-            // Ban  
+            // Ban
             $table->integer('ban_admin_id')->nullable();
             $table->text('ban_note')->nullable();
             $table->dateTime('banned_at')->nullable();
-            
+
             //Goi y viec lam
             $table->boolean('status_find_job')->default(UserEnum::FIND_JOB_ON);
             $table->tinyInteger('job_type')->nullable();// hinh thuc lam viec
@@ -45,8 +46,8 @@ return new class extends Migration
             $table->tinyInteger('level')->nullable();
             $table->tinyInteger('salary')->nullable();
             $table->tinyInteger('english_level')->nullable();
-            $table->text('desire')->nullable();            
-            $table->text('introduce')->nullable();            
+            $table->text('desire')->nullable();
+            $table->text('introduce')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

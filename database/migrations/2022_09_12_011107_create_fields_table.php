@@ -13,15 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('companies', function (Blueprint $table) {
+        Schema::create('fields', function (Blueprint $table) {
             $table->id();
-            $table->string('logo')->nullable();
-            $table->string('cover')->nullable();
             $table->string('name');
-            $table->tinyInteger('size');
-            $table->string('short_description');
-            $table->text('description');
-            $table->timestamps();
         });
     }
 
@@ -32,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('companies');
+        Schema::dropIfExists('fields');
     }
 };

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use App\Enums\EmployerEnum;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -22,8 +23,14 @@ return new class extends Migration
             $table->string('email')->unique()->index();//pii
             $table->string('phone')->unique()->index();//pii
             $table->string('password');
+            $table->boolean('gender');
             $table->string('avatar')->nullable();
             $table->dateTime('email_verified_at')->nullable();
+            $table->tinyInteger('status')->default(EmployerEnum::STATUS_OK);
+            $table->tinyInteger('type')->default(EmployerEnum::TYPE_NORMAL);
+
+            //foreign key
+            $table->int('company_id');//pii
 
             $table->timestamps();
         });
