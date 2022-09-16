@@ -3,7 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\UserController;
-use App\Http\Controllers\Auth\AuthController;
 // use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +18,6 @@ use App\Http\Controllers\Auth\AuthController;
 Route::get('test1',function(Request $request) {
     return 1;
 });
-Route::post('register', [AuthController::class, 'register']);
+Route::post('register', [LoginController::class, 'register']);
 
 

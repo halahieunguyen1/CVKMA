@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -80,4 +82,12 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
     {
         return [];
     }
+
+    protected function fullname(): Attribute
+    {
+        return Attribute::make(
+            get: fn () =>  $this->first_name . ' ' . $this->last_name,
+        );
+    }
+
 }
