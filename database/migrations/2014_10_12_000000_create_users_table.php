@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('first_name');//pii
             $table->string('last_name');//pii
             $table->string('address');//pii
-            $table->string('dob');//pii
+            $table->dateTime('dob');//pii
             $table->string('email')->unique()->index();//pii
             $table->string('phone')->unique()->index();//pii
             $table->string('password');
-            $table->boolean('gender');
+            $table->boolean('gender')->default(UserEnum::MAN);
             $table->string('avatar')->nullable();
             $table->tinyInteger('type')->default(UserEnum::TYPE_NORMAL);
             $table->date('premium_end_at')->nullable();

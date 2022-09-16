@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Enums;
+namespace App\Enums\Response;
+use App\Enums\AbstractEnum;
 
-class UserEnum extends AbstractEnum
+class StatusCode extends AbstractEnum
 {
-    const TYPE_NORMAL = 0;
+    const FAIL_VALIDATE = 402;
     const TYPE_PREMIUM = 1;
 
     const STATUS_OK = 0;
@@ -14,7 +15,4 @@ class UserEnum extends AbstractEnum
     const FIND_JOB_ON = 0;
     const FIND_JOB_OFF = 1;
 
-    //gender
-    const MAN = 0;
-    const WOMAN = 1;
 }
