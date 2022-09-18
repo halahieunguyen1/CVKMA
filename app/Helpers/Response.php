@@ -14,11 +14,10 @@ function responseSuccess(
 
 function reponseError(
     array $data = [],
-    string $message = 'That bai',
+    string $message = 'Đã có lỗi xảy ra, vui lòng thử lại sau',
     $statusCode = 404
 ) {
     return response()->json([
-        'success' => false,
         'message' => $message,
         'data' => $data,
     ], $statusCode);

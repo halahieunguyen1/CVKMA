@@ -6,8 +6,8 @@ use App\Models\User;
 
 class UserRepository
 {
-    public function create($data)
+    public function create($options)
     {
-        return User::create($data);
+        return User::create($options);
     }
 }

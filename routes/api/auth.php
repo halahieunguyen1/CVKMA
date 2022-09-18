@@ -16,9 +16,8 @@ use App\Http\Controllers\Auth\AuthController;
 |
 */
 // Auth::routes(['verify' => true]);
-Route::get('test1',function(Request $request) {
-    return 1;
-});
+
 Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
 
 

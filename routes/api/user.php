@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\User\UserController;
 // use Illuminate\Support\Facades\Auth;
 /*
@@ -15,9 +16,13 @@ use App\Http\Controllers\User\UserController;
 |
 */
 // Auth::routes(['verify' => true]);
-Route::get('test1',function(Request $request) {
-    return 1;
-});
+Route::get('auth_fail',function() {
+    reponseError(statusCode: 401);
+})->name('login');
 Route::post('register', [LoginController::class, 'register']);
-
+Route::group(['middleware'=>['auth:user']], function() {
+    Route::get('userInfo',function(Request $request) {
+        return Auth::user();
+    });
+});
 

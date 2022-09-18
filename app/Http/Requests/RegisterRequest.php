@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Enums\AuthEnum;
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
@@ -10,6 +11,8 @@ use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\Rule;
 use App\Enums\Response\StatusCode;
+use Illuminate\Http\Request;
+
 class RegisterRequest extends FormRequest
 {
     /**
@@ -17,16 +20,21 @@ class RegisterRequest extends FormRequest
      *
      * @return array<string, mixed>
      */
-    public function rules()
+    public function rules(Request $request)
     {
+        $table = match (intval($request->type_auth)) {
+            AuthEnum::TYPE_ADMIN => 'admins',
+            AuthEnum::TYPE_EMPLOYER => 'employers',
+            default => 'users',
+        };
         return [
-            'email' => ['required', 'email', Rule::unique('users','email')],
+            'email' => ['required', 'email', Rule::unique($table,'email')],
             'password' => 'required|min:6|max:30|confirmed',
             'first_name' => 'required|max:30',
             'last_name' => 'required|max:30',
-            'phone' => ['required', 'regex:/^0[0-9]{9}$/', Rule::unique('users','phone')],
+            'phone' => ['required', 'regex:/^0[0-9]{9}$/', Rule::unique($table,'phone')],
             'address' => 'required',
-            'dob' => ['required', 'date', 'before:today']
+            'dob' => ['required', 'date', 'before:today'],
         ];
     }
 
