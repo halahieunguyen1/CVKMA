@@ -1,16 +1,15 @@
 <?php
 
 namespace App\Models;
-use Tymon\JWTAuth\Contracts\JWTSubject;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Facades\Auth;
+use App\Traits\PersonTrait; 
 
-class Admin extends Authenticatable  implements JWTSubject
+class Admin extends Model
 {
     use HasFactory, Notifiable;
+    use PersonTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -29,14 +28,13 @@ class Admin extends Authenticatable  implements JWTSubject
         'remember_token',
     ];
 
+    protected $guarded = [];
 
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
-
-    public function getJWTCustomClaims()
-    {
-        return [];
-    }
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+    ];
 }
