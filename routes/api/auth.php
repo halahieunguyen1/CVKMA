@@ -19,5 +19,11 @@ use App\Http\Controllers\Auth\AuthController;
 
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
+Route::group(['middleware'=>['auth:api']], function() {
+    Route::post('change-password', [AuthController::class, 'changePassword']);
+    Route::post('update-info', [UserController::class, 'updateInfo']);
+
+    Route::post('logoff', [AuthController::class, 'login']);
+});
 
 

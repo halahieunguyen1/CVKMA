@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Auth;
 
 use App\Enums\AuthEnum;
 use App\Models\User;
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\BaseRequest;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Http\Exceptions\HttpResponseException;
@@ -13,7 +13,7 @@ use Illuminate\Validation\Rule;
 use App\Enums\Response\StatusCode;
 use Illuminate\Http\Request;
 
-class RegisterRequest extends FormRequest
+class RegisterRequest extends BaseRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -22,17 +22,12 @@ class RegisterRequest extends FormRequest
      */
     public function rules(Request $request)
     {
-        $table = match (intval($request->type_auth)) {
-            AuthEnum::TYPE_ADMIN => 'admins',
-            AuthEnum::TYPE_EMPLOYER => 'employers',
-            default => 'users',
-        };
         return [
-            'email' => ['required', 'email', Rule::unique($table,'email')],
+            'email' => ['required', 'email', Rule::unique('users','email')],
             'password' => 'required|min:6|max:30|confirmed',
             'first_name' => 'required|max:30',
             'last_name' => 'required|max:30',
-            'phone' => ['required', 'regex:/^0[0-9]{9}$/', Rule::unique($table,'phone')],
+            'phone' => ['required', 'regex:/^0[0-9]{9}$/', Rule::unique('users','phone')],
             'address' => 'required',
             'dob' => ['required', 'date', 'before:today'],
         ];
@@ -76,14 +71,4 @@ class RegisterRequest extends FormRequest
         ];
     }
 
-    protected function failedValidation(Validator $validator)
-    {
-
-        $errors = (new ValidationException($validator))->errors();
-        throw new HttpResponseException(response()->json(
-            [
-                'error' => $errors,
-                'status_code' => StatusCode::FAIL_VALIDATE,
-            ], JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
-    }
 }

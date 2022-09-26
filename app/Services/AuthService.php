@@ -2,15 +2,13 @@
 
 
 namespace App\Services;
-use Illuminate\Support\Facades\Config;
-use App\Enums\AuthEnum;
-use App\Enums\EmployerEnum;
 use App\Enums\UserEnum;
-use App\Enums\TableEnum;
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
 use App\Repositories\EmployerRepository;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class AuthService
 {
@@ -21,6 +19,16 @@ class AuthService
         public EmployerRepository $employerRepo,
     ) {
 
+    }
+
+    public function checkPassword($password) {
+        return Hash::check($password, Auth::user()->password);
+    }
+
+    public function changePassword($newPassword) {
+        return User::whereId(Auth::id())->update([
+            'password' => Hash::make($newPassword)
+        ]);
     }
 
     public function create($data)
@@ -49,7 +57,7 @@ class AuthService
     public function login(Request $request)
     {
         $optionsLogin = $this->formatLogin($request);
-        $token = Auth::guard('employer')->attempt($optionsLogin, true);
+        $token = Auth::guard('api')->attempt($optionsLogin, true);
         $result = [];
         if ($token) {
             $result = [

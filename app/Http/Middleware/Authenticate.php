@@ -2,7 +2,11 @@
 
 namespace App\Http\Middleware;
 
+use App\Enums\Response\MessageEnum;
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
+use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Http\JsonResponse;
+use App\Enums\Response\StatusCode;
 
 class Authenticate extends Middleware
 {
@@ -16,7 +20,11 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('login');
+            throw new HttpResponseException(response()->json(
+                [
+                    'error' => MessageEnum::AUTHENTICATE_FAILD,
+                    'status_code' => StatusCode::FAIL_AUTHENTICATE,
+                ], JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
         }
     }
 }

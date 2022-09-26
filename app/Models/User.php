@@ -84,4 +84,23 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
         return [];
     }
 
+    public function formatInfo() {
+        $unFomated = [
+            'admin_note',
+            'admin_note_id',
+            'admin_note_at',
+            'ban_admin_id',
+            'banned_at',
+            'ban_note',
+            'email_verified_at',
+            'banned_at',
+            'password',
+            'remember_token',
+            'updated_at'
+        ];
+        foreach ($unFomated as $item) {
+            unset($this->{$item});
+        }
+        return $this->attributes;
+    }
 }
