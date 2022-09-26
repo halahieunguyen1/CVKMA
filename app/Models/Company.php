@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use App\Traits\PersonTrait;
 
-class Employer extends Model
+class Company extends Model
 {
     use HasFactory, Notifiable;
 
