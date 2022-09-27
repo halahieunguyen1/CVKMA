@@ -14,6 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $arr = [
+            new CompanySeeder(),
+        ];
+        foreach ($arr as $item) {
+            $item->run();
+        }
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
