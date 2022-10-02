@@ -19,8 +19,8 @@ use App\Http\Controllers\Job\JobController;
 Route::get('get-all', [JobController::class, 'getAll']);
 Route::get('get-by-id', [JobController::class, 'getById']);
 Route::group(['middleware'=>['auth:api']], function() {
-    Route::post('create', [JobController::class, 'create']);
-    Route::post('update', [JobController::class, 'update ']);
+    // Route::post('create', [JobController::class, 'create']);
+    // Route::post('update', [JobController::class, 'update ']);
 });
 
 

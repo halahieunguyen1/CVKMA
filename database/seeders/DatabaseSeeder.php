@@ -16,15 +16,14 @@ class DatabaseSeeder extends Seeder
     {
         $arr = [
             new CompanySeeder(),
+            new FieldSeeder(),
+            new JobSeeder(),
+            new EmployerSeeder(),
+            new CitySeeder(),
+            new SkillSeeder(),
         ];
         foreach ($arr as $item) {
             $item->run();
         }
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }

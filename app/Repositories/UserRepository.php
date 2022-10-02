@@ -10,4 +10,12 @@ class UserRepository
     {
         return User::create($options);
     }
+
+    public function update(User $user, $options)
+    {
+        foreach ($options as $key => $option) {
+            $user->$key = $option;
+        }
+        return $user->save();
+    }
 }

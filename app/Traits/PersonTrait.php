@@ -50,10 +50,10 @@ trait PersonTrait
         );
     }
 
-    protected function password(): Attribute
-    {
-        return Attribute::make(
-            set: fn ($value) =>  bcrypt($value),
-        );
-    }
+    // protected function password(): Attribute
+    // {
+    //     return Attribute::make(
+    //         set: fn ($value) =>  bcrypt($value),
+    //     );
+    // }
 }

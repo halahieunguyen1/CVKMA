@@ -11,5 +11,6 @@ class MessageEnum extends AbstractEnum
     const AUTHENTICATE_FAILD = 'Yêu cầu đăng nhập để có thể truy cập';
     
     const CHANGE_PASSWORD_SUCCESS = 'Thay đổi mật khẩu thành công';
+    const UPDATE_FAILD = 'Cập nhập thông tin thất bại';
 
 }

@@ -19,7 +19,6 @@ class ChangePasswordRequest extends BaseRequest
     public function rules()
     {
         return [
-            'password' => 'required',
             'new_password' => 'required|min:6|max:30|confirmed',
         ];
     }
@@ -27,7 +26,6 @@ class ChangePasswordRequest extends BaseRequest
     public function messages()
     {
         return [
-            'password.required' => ':attribute không được để trống!',
             'new_password.min' => ':attribute tối thiểu phải là 6 kí tự',
             'new_password.required' => ':attribute không được để trống!',
             'new_password.confirmed' => ':attribute nhập lại không chính xác',
@@ -37,7 +35,6 @@ class ChangePasswordRequest extends BaseRequest
     public function attributes()
     {
         return [
-            'password' => 'Mật khẩu',
             'new_password' => 'Mật khẩu mới',
         ];
     }

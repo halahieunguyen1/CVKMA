@@ -15,8 +15,10 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
 {
     use HasFactory, Notifiable;
     use PersonTrait;
+    protected $primaryKey = 'uuid';
+    protected $keyType = 'string';
     protected $fillable = [
-        'id',
+        'uuid',
         'created_at',
         'updated_at',
         'first_name',
@@ -25,7 +27,6 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
         'dob',
         'email',
         'phone',
-        'password',
         'gender',
         'avatar',
         'type',
@@ -61,7 +62,6 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
      * @var array
      */
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 
@@ -94,7 +94,6 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
             'ban_note',
             'email_verified_at',
             'banned_at',
-            'password',
             'remember_token',
             'updated_at'
         ];

@@ -39,10 +39,6 @@ class AuthController extends Controller
     }
 
     public function changePassword(ChangePasswordRequest $request) {
-        $password = $request->password;
-        if (!$this->authService->checkPassword($password)) {
-            return reponseError(message: MessageEnum::PASSWORD_FAILD, statusCode: 404);  
-        }
         $newPassword = $request->new_password;
         if (!$this->authService->changePassword($newPassword)) {
             return reponseError(message: MessageEnum::BASE_FAILD, statusCode: 404);  

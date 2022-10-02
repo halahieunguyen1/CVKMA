@@ -14,14 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            $table->uuid();
             $table->string('first_name');//pii
             $table->string('last_name');//pii
             $table->string('address');//pii
             $table->dateTime('dob');//pii
             $table->string('email')->unique()->index();//pii
             $table->string('phone')->unique()->index();//pii
-            $table->string('password');
             $table->boolean('gender')->default(UserEnum::MAN);
             $table->string('avatar')->nullable();
             $table->tinyInteger('type')->default(UserEnum::TYPE_NORMAL);

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Job;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -17,8 +17,7 @@ class JobController extends Controller
     {
 
     }
-    public function update(Request $request) {
-
-
+    public function getAll(Request $request) {
+        $jobs = $this->jobService->getAll($request);
     }
 }

@@ -21,6 +21,7 @@ class UpdateUserRequest extends BaseRequest
             'phone' => ['regex:/^0[0-9]{9}$/', Rule::unique('users','phone')->ignore(Auth::id())],
             'address' => 'max:200',
             'dob' => ['date', 'before:today'],
+            'exp' => 'numeric|max:127'
         ];
     }
 
@@ -33,7 +34,9 @@ class UpdateUserRequest extends BaseRequest
             'phone.unique' => ':attribute đã tồn tại',
             'dob.date' => ':attribute không đúng định dạng',
             'dob.before' => ':attribute phải là ngày trong quá khứ',
-            'address.max' => ':attribute không được quá 200 kí tự'
+            'address.max' => ':attribute không được quá 200 kí tự',
+            'exp.numeric' => ':attribute sai định dạng',
+            'exp.max' => ':attribute vượt quá giới hạn cho phép',
         ];
     }
 
@@ -45,6 +48,7 @@ class UpdateUserRequest extends BaseRequest
             'phone' => 'Số điện thoại',
             'address' => 'Địa chỉ',
             'dob' => 'Ngày sinh',
+            'exp' => 'Kinh nghiệm',
         ];
     }
 
