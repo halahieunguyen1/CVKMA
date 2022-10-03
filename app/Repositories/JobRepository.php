@@ -6,7 +6,7 @@ use App\Models\Job;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class JobRepository
+class JobRepository extends BaseRepository
 {
     public function getModel() {
             return Job::query();

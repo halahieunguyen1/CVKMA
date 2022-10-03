@@ -31,7 +31,7 @@ trait SeederTrait
             'employers' => 'employer_id',
             'jobs' => 'job_id',
         };
-        $dbh = new PDO("mysql:dbname=$connection;host=127.0.0.1;port=3306", 'root', '');
+        $dbh = new PDO("mysql:dbname=$connection;host=" . env('DB_HOST') . ";port=3306", 'root', env('DB_PASSWORD'));
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql = "SELECT * FROM $table order by $pii_primary";
         $stmt = $dbh->query($sql);
@@ -56,7 +56,7 @@ trait SeederTrait
             default => 'cvo'
         };
         if ($this->table == 'users') $this->primary = 'user_id';
-        $this->dbh = new PDO("mysql:dbname=$this->connection;host=127.0.0.1;port=3306", 'root', '');
+        $this->dbh = new PDO("mysql:dbname=$this->connection;host=" . env('DB_HOST') . ";port=3306", 'root', env('DB_PASSWORD'));
     }
 
     function getAll() {
