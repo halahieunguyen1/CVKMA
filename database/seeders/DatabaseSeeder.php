@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
             new EmployerSeeder(),
             new CitySeeder(),
             new SkillSeeder(),
+            new CategorySeeder(),
+            new JobCategorySeeder(),
         ];
         foreach ($arr as $item) {
             $item->run();

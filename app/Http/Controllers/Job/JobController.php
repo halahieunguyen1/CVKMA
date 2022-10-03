@@ -6,18 +6,27 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Requests\User\UpdateUserRequest;
-use App\Services\UserService;
+use App\Services\JobService;
 use App\Enums\UserEnum;
 
 class JobController extends Controller
 {
     public function __construct(
-        public UserService $userService,
+        public JobService $jobService,
     )
     {
 
     }
     public function getAll(Request $request) {
-        $jobs = $this->jobService->getAll($request);
+        $query = $this->jobService->getModel(); 
+        $jobs = $this->jobService->get($query, $request);
+        return responseSuccess(data: $jobs);
+    }
+
+    public function jobIT(Request $request) {
+        $query = $this->jobService->getModel(); 
+        $this->jobService->queryJobIT($query, $request);
+        $jobs = $this->jobService->get($query, $request);
+        return responseSuccess(data: $jobs);
     }
 }

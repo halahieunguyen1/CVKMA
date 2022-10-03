@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -24,5 +26,25 @@ class Job extends Model
     public function cvApplies()
     {
         return $this->hasMany('App\Models\CvApply', 'job_id', 'id');
+    }
+
+    public function fields()
+    {
+        return $this->belongsToMany(
+            Field::class,
+            'job_fields',
+            'job_id',
+            'field_id',
+            'id',
+            'id',
+        );
+    }
+
+    public function scopePublish($query)
+    {
+        $now = Carbon::now();
+        return $query->where('publish_from', '<=', $now)
+        ->where('publish_to', '>=', $now)
+        ->where('is_publish', 1);
     }
 }
