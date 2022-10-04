@@ -17,7 +17,7 @@ class FieldSeeder extends Seeder
      * @return void
      */
     private $data = [];
-    
+
     public function run()
     {
             Field::truncate();
@@ -36,10 +36,11 @@ class FieldSeeder extends Seeder
     public $index = 0;
     public function insertData($field) {
         $fieldInsert = [
+            'id'    => $field['id'],
             'name'    => $field['name'],
         ];
         return $fieldInsert;
     }
 
-    
+
 }

@@ -57,6 +57,7 @@ class EmployerSeeder extends Seeder
     public function insertData($employer, $piiEmployer) {
         [$lastName, $firstName] =separateFullNameHasId($piiEmployer['fullname']);
         $employerInsert = [
+            'id' => $employer['id'],
             'first_name' => $firstName,
             'last_name' => $lastName,
             'address' => array_rand($this->address),
@@ -76,5 +77,5 @@ class EmployerSeeder extends Seeder
         return $employerInsert;
     }
 
-    
+
 }

@@ -16,7 +16,7 @@ class CategorySeeder extends Seeder
      * @return void
      */
     private $data = [];
-    
+
     public function run()
     {
             Category::truncate();
@@ -42,5 +42,5 @@ class CategorySeeder extends Seeder
         return $categoryInsert;
     }
 
-    
+
 }

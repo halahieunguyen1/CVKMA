@@ -55,6 +55,7 @@ class JobSeeder extends Seeder
     public $index = 0;
     public function insertData($job, $piiJob) {
         $jobInsert = [
+            'id' => $job['id'],
             'title' => $job['title'],
             'employer_id' => $job['employer_id'],
             'company_id' => $job['company_id'],
@@ -79,5 +80,5 @@ class JobSeeder extends Seeder
         return $jobInsert;
     }
 
-    
+
 }

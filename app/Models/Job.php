@@ -40,6 +40,23 @@ class Job extends Model
         );
     }
 
+    public function categories()
+    {
+        return $this->belongsToMany(
+            Category::class,
+            'job_categories',
+            'job_id',
+            'category_id',
+            'id',
+            'id',
+        );
+    }
+
+    public function jobCategories()
+    {
+        return $this->hasMany(JobCategory::class, 'job_id', 'id');
+    }
+
     public function scopePublish($query)
     {
         $now = Carbon::now();

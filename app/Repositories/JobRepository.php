@@ -25,7 +25,7 @@ class JobRepository extends BaseRepository
         // if ($request->salary_from) {
         //     $query->where('salary_to', '>=', $request->salary_from);
         // }
-       
+
         // if ($request->salary_to) {
         //     $query->where('salary_from', '', $request->salary_from);
         // }
@@ -54,12 +54,12 @@ class JobRepository extends BaseRepository
         $query->offset($page * $take)->limit($take);
     }
 
-    public function get(Builder $query) 
+    public function get(Builder $query)
     {
         return $query->get();
     }
 
-    public function count(Builder $query) 
+    public function count(Builder $query)
     {
         return $query->count();
     }

@@ -18,13 +18,13 @@ class JobController extends Controller
 
     }
     public function getAll(Request $request) {
-        $query = $this->jobService->getModel(); 
+        $query = $this->jobService->getModel();
         $jobs = $this->jobService->get($query, $request);
         return responseSuccess(data: $jobs);
     }
 
     public function jobIT(Request $request) {
-        $query = $this->jobService->getModel(); 
+        $query = $this->jobService->getModel();
         $this->jobService->queryJobIT($query, $request);
         $jobs = $this->jobService->get($query, $request);
         return responseSuccess(data: $jobs);

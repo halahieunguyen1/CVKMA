@@ -3,7 +3,7 @@
 
 namespace App\Services;
 
-use App\Enums\FieldEnum;
+use App\Enums\CategoryEnum;
 use App\Repositories\JobRepository;
 use App\Repositories\EmployerRepository;
 use Carbon\Carbon;
@@ -35,7 +35,7 @@ class JobService
         };
         $asc = $request->asc ?? true;
         $this->jobRepo->orderBy($query, $orderBy, $asc);
-        
+
         $page = $request->page ?? 0;
         $this->jobRepo->paginate($query, $page, $take);
 
@@ -46,10 +46,10 @@ class JobService
     }
 
     public function queryJobIT(Builder $query) {
-        $query->whereHas('fields', function ($q) {
-            $q->where('fields.id',FieldEnum::JOB_IT);
+        $query->whereHas('jobCategories', function ($q) {
+            $q->whereIn('category_id', [CategoryEnum::JOB_IT_HARDWARE, CategoryEnum::JOB_IT_SOFTWARE]);
         });
     }
 
-   
+
 }
