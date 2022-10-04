@@ -52,7 +52,7 @@ class AuthService
                 'Content-Type' => 'application/json',
             ],
             "body" => json_encode([
-                'account' => 'L02' . $email,
+                'account' => 'android_' . $email,
                 'hash' => $password
             ])
         ]);
@@ -99,7 +99,7 @@ class AuthService
                 'Content-Type' => 'application/json',
             ],
             "body" => json_encode([
-                'account' => 'L02' . $email,
+                'account' => 'android_' . $email,
                 'hash' => $hash
             ])
         ]);

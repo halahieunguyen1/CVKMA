@@ -7,12 +7,19 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Arr;
 
 class Job extends Model
 {
     use HasFactory, Notifiable;
 
     protected $table='jobs';
+
+    protected $guards = [];
+
+    protected $timestampFalse = [
+        'view',
+    ];
 
     public function employer()
     {
@@ -66,6 +73,16 @@ class Job extends Model
         ->where('is_publish', 1);
     }
 
+    public function scopeManager($query)
+    {
+        return $query->whereIn('position_id', JobEnum::POSITION_MANAGER);
+    }
+
+    public function scopeInternship($query)
+    {
+        return $query->where('position_id', JobEnum::JOB_INTERSHIP);
+    }
+
     public function strPosition()
     {
         if ($this->position_id) {
@@ -79,9 +96,19 @@ class Job extends Model
     {
         if ($this->position_id) {
             // value trong file config job_position
-            return in_array($this->position_id, [3, 10, 20, 25, 30]);
+            return in_array($this->position_id, JobEnum::POSITION_MANAGER);
         }
         return false;
+    }
+
+    public static function boot() {
+  
+        parent::boot();
+  
+        static::updating(function(Job $job) {  
+            $isUpdateTimeStamp = !empty(Arr::except($job->getDirty(), $job->timestampFalse));
+            $job->timestamps = $isUpdateTimeStamp;
+        });
     }
 
 }

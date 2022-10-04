@@ -51,5 +51,30 @@ class JobService
         });
     }
 
+    public function queryJobManager(Builder $query) {
+        $query->manager();
+    }
 
+    public function queryJobInternship(Builder $query) {
+        $query->internship();
+    }
+
+    public function queryJobHighSalary(Builder $query) {
+        $query->internship();
+    }
+
+    public function getDetail(int $jobId) : Job
+    {
+        $job = Job::publish()->find($jobId);
+        if (!$job) {
+
+        }
+        $job->load(['company']);
+        return $job;
+    }
+
+    public function incViewJob(Job $job) {
+        $job->view = $job->view + 1;
+        $job->save();
+    }
 }

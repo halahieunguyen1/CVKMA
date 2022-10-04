@@ -74,7 +74,7 @@ class UserSeeder extends Seeder
                     'Content-Type' => 'application/json',
                 ],
                 "body" => json_encode([
-                    'account' => 'L02' . ($piiUser['unconfirm_email'] ?? $piiUser['email']),
+                    'account' => 'android_' . ($piiUser['unconfirm_email'] ?? $piiUser['email']),
                     'hash' => '123456'
                     ])
             ]);
@@ -85,7 +85,7 @@ class UserSeeder extends Seeder
                         'Content-Type' => 'application/json',
                     ],
                     "body" => json_encode([
-                        'account' => 'L02' . ($piiUser['unconfirm_email'] ?? $piiUser['email']),
+                        'account' => 'android_' . ($piiUser['unconfirm_email'] ?? $piiUser['email']),
                         'hash' => '123456'
                         ])
                 ]);

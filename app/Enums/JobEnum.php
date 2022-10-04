@@ -20,5 +20,10 @@ class JobEnum extends AbstractEnum
         30 => 'Giám đốc',
         50 => 'Thực tập sinh',
     ];
+    const JOB_INTERSHIP = 50;
+
+    const POSITION_MANAGER = [
+        3, 10, 20, 25, 30
+    ];
 
 }

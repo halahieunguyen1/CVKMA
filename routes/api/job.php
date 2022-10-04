@@ -16,9 +16,12 @@ use App\Http\Controllers\Job\JobController;
 */
 // Auth::routes(['verify' => true]);
 
-Route::get('get-all', [JobController::class, 'getAll']);
-Route::get('job-it', [JobController::class, 'jobIT']);
-Route::get('get-by-id', [JobController::class, 'getById']);
+Route::get('get-all', [JobController::class, 'get']);
+Route::get('job-it', [JobController::class, 'get']);
+Route::get('job-manager', [JobController::class, 'get']);
+Route::get('job-internship', [JobController::class, 'get']);
+Route::get('job-high-salary', [JobController::class, 'get']);
+Route::get('get-by-id/{id}', [JobController::class, 'getById']);
 
 Route::group(['middleware'=>['auth:api']], function() {
     // Route::post('create', [JobController::class, 'create']);
