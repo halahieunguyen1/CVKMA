@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\JobEnum;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -64,4 +65,23 @@ class Job extends Model
         ->where('publish_to', '>=', $now)
         ->where('is_publish', 1);
     }
+
+    public function strPosition()
+    {
+        if ($this->position_id) {
+            return JobEnum::JOB_POSITION[$this->position_id];
+        }
+        return 'Không xác định';
+    }
+
+    // kiểm tra xem tin tuyển dụng cấp bậc lãnh đạo trở lên không? (Trưởng phòng/ Phó phòng, Quản lý/ Giám sát, Trưởng chi nhánh, Phó giám đốc, Giám đốc)
+    public function isLeaderPosition()
+    {
+        if ($this->position_id) {
+            // value trong file config job_position
+            return in_array($this->position_id, [3, 10, 20, 25, 30]);
+        }
+        return false;
+    }
+
 }
