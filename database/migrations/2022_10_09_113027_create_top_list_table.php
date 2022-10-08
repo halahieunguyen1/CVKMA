@@ -4,7 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AlterTableDataCvsAddColumnIsOnJob extends Migration
+
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +14,16 @@ class AlterTableDataCvsAddColumnIsOnJob extends Migration
      */
     public function up()
     {
-        Schema::table('data_cvs', function (Blueprint $table) {
-            $table->tinyInteger('is_on_job')->default(0);
+        Schema::create('top_lists', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->string('banner');
+            $table->string('og_image');
+            $table->timestamps();
         });
+
+
     }
 
     /**
@@ -25,8 +33,6 @@ class AlterTableDataCvsAddColumnIsOnJob extends Migration
      */
     public function down()
     {
-        Schema::table('data_cvs', function (Blueprint $table) {
-            $table->dropColumn('is_on_job');
-        });
+        Schema::dropIfExists('top_lists');
     }
-}
+};

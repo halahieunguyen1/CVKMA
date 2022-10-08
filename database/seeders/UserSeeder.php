@@ -5,7 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
-use App\Models\Company;
+use App\Models\Company\Company;
 use PDO;
 use App\Traits\SeederTrait;
 use App\Models\User;

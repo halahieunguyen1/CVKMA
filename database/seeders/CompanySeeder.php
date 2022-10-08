@@ -7,7 +7,7 @@ namespace Database\Seeders;
 use App\Enums\CompanyEnum;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
-use App\Models\Company;
+use App\Models\Company\Company;
 use PDO;
 use App\Traits\SeederTrait;
 class CompanySeeder extends Seeder

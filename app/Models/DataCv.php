@@ -9,11 +9,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Arr;
 
-class Cv extends Model
+class DataCv extends Model
 {
     use HasFactory, Notifiable;
 
     protected $table='data_cvs';
+
+    protected $primaryKey='data_cv_id';
 
     protected $guards = [];
 
@@ -22,7 +24,16 @@ class Cv extends Model
     ];
 
     protected $casts = [
-        'data' => 'array'
-   ];
+        'data' => 'array',
+        'deleted_at' => 'datetime', 
+        'updated_at' => 'datetime',
+        'uptop_at' => 'datetime',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User', 'user_id', 'uuid');
+    }
+
 
 }

@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Jobs\CreateCvVersions;
-use App\Models\Cv;
+use App\Models\DataCv;
 use Illuminate\Console\Command;
 use Illuminate\Bus\Batch;
 use Illuminate\Support\Facades\Bus;
@@ -44,7 +44,7 @@ class FillDataCVersions extends Command
         $jobs = [];
 
         // cvo.data_cvs
-        $maxDataCvId = Cv::query()->orderByDesc('data_cv_id')->first()->data_cv_id ?? 0;
+        $maxDataCvId = DataCv::query()->orderByDesc('data_cv_id')->first()->data_cv_id ?? 0;
         for ($i = 0; $i < ceil($maxDataCvId / $size); $i++) {
             $from = $size * $i + 1;
             $to = $from + $size - 1;

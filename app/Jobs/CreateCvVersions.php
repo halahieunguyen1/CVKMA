@@ -65,6 +65,7 @@ class CreateCvVersions implements ShouldQueue
                 $cvVersion = $this->createNewCvVersion($cv);
             }
             $cv->cv_version_id = $cvVersion->id;
+            dump($cv->cv_version_id);
             $cv->save();
         }
     }

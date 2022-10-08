@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 return new class extends Migration
 {
     /**
@@ -13,12 +14,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('job_categories', function (Blueprint $table) {
+        Schema::create('company_top_list', function (Blueprint $table) {
             $table->id();
-            $table->integer('job_id');
-            $table->integer('category_id');
-            $table->boolean('is_main')->default(0);
+            $table->string('company_id');
+            $table->string('top_list_id');
         });
+
+
     }
 
     /**
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('job_categories');
+        Schema::dropIfExists('company_top_list');
     }
 };

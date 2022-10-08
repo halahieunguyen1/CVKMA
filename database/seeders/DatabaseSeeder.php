@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Company\CompanyTopList;
+use App\Models\Company\TopList;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,6 +18,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $arr = [
+            // new DataCvSeeder(),
             new CompanySeeder(),
             new FieldSeeder(),
             new JobSeeder(),
@@ -23,6 +27,8 @@ class DatabaseSeeder extends Seeder
             new SkillSeeder(),
             new CategorySeeder(),
             new JobCategorySeeder(),
+            new TopListSeeder(),
+            new TopListSeeder(),
         ];
         foreach ($arr as $item) {
             $item->run();
