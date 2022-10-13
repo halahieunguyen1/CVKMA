@@ -4,7 +4,6 @@ namespace App\Jobs;
 
 use App\Models\CvVersion\CvVersion;
 use App\Models\CvVersion\DataCvVersion;
-use App\Models\ScoutedCv;
 use Illuminate\Bus\Batchable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -27,6 +26,7 @@ class CreateCvVersions implements ShouldQueue
      */
     public function __construct($fromId, $toId, $model, $primaryKey)
     {
+        dump($fromId);
         $this->fromId = $fromId;
         $this->toId = $toId;
         $this->model = $model;

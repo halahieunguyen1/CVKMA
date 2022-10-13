@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DuyetTinTuDong;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('test', function () {
+
+// $config->setIsolatedDiffTags(array(
+
+// ));
+ 
+return;
+});
+Route::get('diff', [DuyetTinTuDong::class, 'diff']);

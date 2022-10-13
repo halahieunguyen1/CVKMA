@@ -30,6 +30,7 @@ trait SeederTrait
             'companies' => 'company_id',
             'employers' => 'employer_id',
             'jobs' => 'job_id',
+            'job_cv_applies' => 'job_cv_apply_id',
         };
         $dbh = new PDO("mysql:dbname=$connection;host=" . env('DB_HOST') . ";port=3306", 'root', env('DB_PASSWORD'));
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

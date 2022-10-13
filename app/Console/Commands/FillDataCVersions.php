@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Jobs\CreateCvVersions;
 use App\Models\DataCv;
+use App\Models\JobCvApply;
 use Illuminate\Console\Command;
 use Illuminate\Bus\Batch;
 use Illuminate\Support\Facades\Bus;
@@ -44,11 +45,18 @@ class FillDataCVersions extends Command
         $jobs = [];
 
         // cvo.data_cvs
-        $maxDataCvId = DataCv::query()->orderByDesc('data_cv_id')->first()->data_cv_id ?? 0;
+        // $maxDataCvId = DataCv::query()->orderByDesc('data_cv_id')->first()->data_cv_id ?? 0;
+        // for ($i = 0; $i < ceil($maxDataCvId / $size); $i++) {
+        //     $from = $size * $i + 1;
+        //     $to = $from + $size - 1;
+        //     $jobs[] = new CreateCvVersions($from, $to, DataCV::class, 'data_cv_id');
+        // }
+
+        $maxDataCvId = JobCvApply::query()->orderByDesc('id')->first()->id ?? 0;
         for ($i = 0; $i < ceil($maxDataCvId / $size); $i++) {
             $from = $size * $i + 1;
             $to = $from + $size - 1;
-            $jobs[] = new CreateCvVersions($from, $to, DataCV::class, 'data_cv_id');
+            $jobs[] = new CreateCvVersions($from, $to, JobCvApply::class, 'id');
         }
 
         $batch = Bus::batch($jobs)->then(function (Batch $batch) {

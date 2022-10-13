@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             new JobCategorySeeder(),
             new TopListSeeder(),
             new TopListSeeder(),
+            new JobCvApplySeeder()
         ];
         foreach ($arr as $item) {
             $item->run();
