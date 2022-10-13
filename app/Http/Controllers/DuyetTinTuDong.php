@@ -13,7 +13,7 @@ class DuyetTinTuDong extends Controller
         
 
  
-    $oldHtml = "Chuyên......            Viên Tư Vấn Tài Chính_ Làm Việc Tại SHINHAN Hà Nội (Chi Nhánh Mới)_Thu Nhập Từ <i>11 Triệu</i>";
+    $oldHtml = "Chuyên......                 Viên Tư Vấn Tài Chính_ Làm Việc Tại SHINHAN Hà Nội (Chi Nhánh Mới)_Thu Nhập Từ <i>11 Triệu</i>";
     $newHtml = "Chuyên Viên Tư Vấn Tài Chính_ Làm Việc Tại SEABANK Đại Từ_Thu Nhập Từ 480Usd
     Địa điểm	Hà Nội	 <a>11 Triệu</a>";
     $data = $this->diffHtml($oldHtml, $newHtml);
@@ -43,7 +43,7 @@ function diffHtml ($oldHtml , $newHtml) {
     $config
     ->setInsertSpaceInReplace(true)
     ->setMatchThreshold(95)
-    ->setSpecialCaseChars([])
+    ->setSpecialCaseChars(['.', 's'])
     ;
     $config ->setIsolatedDiffTags([])
 ;
@@ -51,36 +51,7 @@ function diffHtml ($oldHtml , $newHtml) {
     $htmlDiff = HtmlDiff::created($oldHtml, $newHtml, $config);
 
     $diff = $htmlDiff->build();
-    $old = [];
-    $new = [];
-    if (is_array($diff)) {
-        foreach ($diff as $value) {
-            if ($value->action == 'delete' || $value->action == 'replace' )
-            $old[] = [$value->startInOld, $value->endInOld];
-            if ($value->action == 'insert' )
-            $new[] = [$value->startInNew, $value->endInNew];
-        }
-        return [
-            'old' => [
-                'position' => $old,
-                'text' => $htmlDiff->getOldWords()
-            ],
-            'new' => [
-                'position' => $new,
-                'text' => $htmlDiff->getNewWords()
-            ]
-        ];
-    } else
-    return [
-        'old' => [
-            'text' => $oldHtml
-        ],
-        'new' => [
-            'text' => $oldHtml
-        ]
-    ];
+   return $diff;
  }
-
-
 
 }

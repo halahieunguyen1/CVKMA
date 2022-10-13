@@ -31,30 +31,47 @@ class HtmlDiff extends Diff
         $this->indexNewWords();
 
         $operations = $this->operations();
-        // return highLightText($operations);
-return $operations ;
+        return $this->highLightText($operations);
 }
-function highLightText($operations) {
-    $arrCard = ['a', 'div', 'i', 'span'];
-    $arr = ['.', ',', '(', 's', ')'];
-    $arr = ['s'];
-    $text = '';
-    $first = 0;
+    private function highLightText($operations) {
+    $arrayOld = $this->oldWords;
+    $arrayNew = $this->newWords;
+    $textOld = '';
+    $textNew = '';
+    $firstOld = 0;
+    $firstNew = 0;
     $sttTu = 0;
-    $specialCharacters = '[' . implode(',', $arrCard) . ']';
-    $special = '(\\' . implode('|\\', $arr) . ')';
-    foreach ($arrayIndex = $positions as $index) {
-        $k = implode(array_slice($array, $index[0], $index[1] - $index[0]));
-        if (!preg_match('/^'.$special.'*(<\/{0,1}'.$specialCharacters.'\.*>){0,1}'.$special.'*$/', $k)) {
-            $text .= implode(array_slice($array, $first, $index[0] - $first)) .'<span class="label diffmod" style="background-color:red; color: white;padding: 0 2px; font-size: 14px;">'.$k.'</span>';
-        } else {
-            $text .= implode(array_slice($array, $first, $index[0] - $first)).$k;
+    
+    foreach ($arrayIndex = $operations as $value) {
+        $kOld = implode(array_slice($arrayOld, $value->startInOld, $value->endInOld - $value->startInOld));
+        $kNew = implode(array_slice($arrayNew, $value->startInNew, $value->endInNew - $value->startInNew));
+        $textOld .= implode(array_slice($arrayOld, $firstOld, $value->startInOld - $firstOld));
+        $textNew .= implode(array_slice($arrayNew, $firstNew, $value->startInNew - $firstNew));
+         if ($value->action == 'delete')
+        {
+            $textOld .= $this->highLight($kOld);
+        }
+
+        if ($value->action == 'replace')
+        {
+            $textOld .= $this->highLight($kOld);
+            $textNew .= $this->highLight($kNew);
+        }
+        if ($value->action == 'insert' ) {
+            $textNew .= $this->highLight($kNew);
+        }
+        if ($value->action == 'equal') {
+            $textOld .= $kOld;
+            $textNew .= $kNew;
 
         }
-        $first = $index[1];
+
+        $firstOld = $value->endInOld;
+        $firstNew = $value->endInNew;
     }
-    $text .=  implode(array_slice($array, $first));
-    return $text;
+    $textOld .=  implode(array_slice($arrayOld, $firstOld));
+    $textNew .=  implode(array_slice($arrayNew, $firstNew));
+    return compact('textOld', 'textNew');
 }
 public function getOldWords() {
     return $this->oldWords;
@@ -87,9 +104,8 @@ protected function convertHtmlToListOfWords(string $text) : array
                 
                 continue;
             }
-            
             // $sentenceOrHtmlTag = $this->normalizeWhitespaceInHtmlSentence($sentenceOrHtmlTag);
-            $sentenceOrHtmlTag = $this->normalizeInHtmlSentence($sentenceOrHtmlTag);
+            // $sentenceOrHtmlTag = $this->normalizeInHtmlSentence($sentenceOrHtmlTag);
 
             $sentenceSplitIntoWords = [];
 
@@ -97,14 +113,15 @@ protected function convertHtmlToListOfWords(string $text) : array
             // in the middle of a word, but not at the beginning or the end of a word.
             // Split regex compiles to this (in default config case);
             // /\s|[\.\,\(\)\']|[a-zA-Z0-9\.\,\(\)'\pL]+[a-zA-Z0-9\pL]|[^\s]/mu
-            $regex = sprintf('/\s|[%s]|[a-zA-Z0-9%s\pL]+[a-zA-Z0-9\pL]|[^\s]/mu', $specialCharacters, $specialCharacters);
+            $regex = sprintf('/[%s]+|[a-zA-Z0-9\pL]+[a-zA-Z0-9\pL]|[^\s]/mu', $specialCharacters);
+            // dd($regex);
             preg_match_all(
                 $regex,
                 $sentenceOrHtmlTag . ' ', // Inject a space at the end to make sure the last word is found by having a space behind it.
                 $sentenceSplitIntoWords,
                 PREG_SPLIT_NO_EMPTY
             );
-
+// dd($sentenceSplitIntoWords);
             // Remove the last space, since that was added by us for the regex matcher
             array_pop($sentenceSplitIntoWords[0]);
 
@@ -121,6 +138,7 @@ protected function convertHtmlToListOfWords(string $text) : array
             return $sentence;
         }
 
+        // $sentence = preg_replace('/\s\s+|\r+|\n+|\r\n+/', ' ', $sentence);
         $sentence = preg_replace('/[\s|\r|\n|\r\n|\.|\(|\)|\,]+/', ' ', $sentence);
 
 
@@ -137,5 +155,16 @@ protected function convertHtmlToListOfWords(string $text) : array
         }
 
         return $sentence;
+    }
+
+    public function highLight($text) {
+        $arr = ['.', ',', '(', 's', ')'];
+        $arrCard = ['a', 'div', 'i', 'span'];
+        $specialCharacters = '[' . implode(',', $arrCard) . ']';
+        $special = '(\\' . implode('|\\', $arr) . ')';
+        if (!preg_match('/^'.$special.'*(<\/{0,1}'.$specialCharacters.'\.*>){0,1}'.$special.'*$/', $text)) {
+            return '<span class="high-light">'.$text.'</span>';
+        }
+        return $text;
     }
 }
