@@ -12,5 +12,6 @@ class MessageEnum extends AbstractEnum
     
     const CHANGE_PASSWORD_SUCCESS = 'Thay đổi mật khẩu thành công';
     const UPDATE_FAILD = 'Cập nhập thông tin thất bại';
+    const SAVE_CV_ERROR = 'Lưu CV thất bại';
 
 }
