@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CvVersion extends Model
 {
-    protected $masterConnection = 'cvo';
     protected $table = 'cv_versions';
-
+    protected $hidden = [
+        'hash_all'
+    ];
     public function dataCvVersion()
     {
         return $this->belongsTo('App\Models\CvVersion\DataCvVersion', 'data_cv_version_id');

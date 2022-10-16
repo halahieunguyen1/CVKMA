@@ -25,6 +25,12 @@ class JobService
     public function getModel() {
         return $this->jobRepo->getModel();
     }
+
+    public function find($id) : Job|null
+    {
+        return $this->jobRepo->find($id);
+    }
+
     public function get($query, Request $request) {
         $take = 10;
         $query->publish();
@@ -37,11 +43,11 @@ class JobService
         $this->jobRepo->orderBy($query, $orderBy, $asc);
 
         $page = $request->page ?? 0;
+        $count = $this->jobRepo->count($query);
         $this->jobRepo->paginate($query, $page, $take);
-
         return [
             'jobs' => $this->jobRepo->get($query),
-            'count' => $this->jobRepo->count($query)
+            'count' => $count,
         ];
     }
 
@@ -76,5 +82,10 @@ class JobService
     public function incViewJob(Job $job) {
         $job->view = $job->view + 1;
         $job->save();
+    }
+
+    public function getByCompany($query, $companyId)
+    {
+        $query->whereCompanyId($companyId);
     }
 }

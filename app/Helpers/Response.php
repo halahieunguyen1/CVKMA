@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Database\Eloquent\Collection;
+
 function responseSuccess(
-    array $data = [],
+    array|Collection $data = [],
     string $message = 'Thành công',
     $statusCode = 200
 ) {

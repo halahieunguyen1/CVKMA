@@ -42,7 +42,6 @@ class CvVersionRepository
     {
         $cvVersionModel = new CvVersion();
         $cvVersion = $cvVersionModel->where(['hash_all' => $this->createHash($cvData), 'data_cv_id' => $dataCvId])->first();
-        dd($cvVersion);
         return $cvVersion;
     }
 }

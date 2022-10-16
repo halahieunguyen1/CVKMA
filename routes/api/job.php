@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Job\JobApplyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Job\JobController;
@@ -16,16 +17,27 @@ use App\Http\Controllers\Job\JobController;
 */
 // Auth::routes(['verify' => true]);
 
-Route::get('get-all', [JobController::class, 'get']);
-Route::get('job-it', [JobController::class, 'get']);
-Route::get('job-manager', [JobController::class, 'get']);
-Route::get('job-internship', [JobController::class, 'get']);
-Route::get('job-high-salary', [JobController::class, 'get']);
-Route::get('get-by-id/{id}', [JobController::class, 'getById']);
+Route::group([
+    'controller' => JobController::class,
+], function () {
+    Route::get('get-all', 'get');
+    Route::get('job-it', 'get');
+    Route::get('job-manager', 'get');
+    Route::get('job-internship', 'get');
+    Route::get('job-high-salary', 'get');
+    Route::get('get-by-id/{id}', 'getById');
+    
+    Route::group(['middleware'=>['auth:api']], function() {
+        // Route::post('create', 'create);
+        // Route::post('update', 'update);
+    });
+});
 
-Route::group(['middleware'=>['auth:api']], function() {
-    // Route::post('create', [JobController::class, 'create']);
-    // Route::post('update', [JobController::class, 'update ']);
+Route::group([
+    'controller' => JobApplyController::class,
+    'middleware' => ['auth:api'],
+], function() {
+    Route::post('apply', 'postApply');
 });
 
 

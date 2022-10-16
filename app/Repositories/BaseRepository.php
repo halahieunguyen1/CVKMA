@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 abstract class BaseRepository
 {
-    public abstract function query(Builder $query, Request $request) : void;
+    public abstract function query(Builder $query, $option) : void;
 
     public function orderBy(Builder $query, $orderBy, $asc = false) : void
     {

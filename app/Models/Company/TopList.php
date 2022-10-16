@@ -19,8 +19,6 @@ class TopList extends Model
 
     public function companies()
     {
-        return $this->belongsToMany('App\Models\Company\Company', 'company_top_lists', 'top_list_id', 'company_id');
+        return $this->belongsToMany('App\Models\Company\Company', 'company_top_list', 'top_list_id', 'company_id');
     }
-
-
 }

@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Cv;
 use App\Http\Requests\BaseRequest;
 
-class CreateCvRequest extends BaseRequest
+class UpdateCvRequest extends BaseRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -14,6 +14,7 @@ class CreateCvRequest extends BaseRequest
     {
         return [
             'global' => ['required'],
+            'cv_id' => ['required'],
             'profile' => ['required'],
             'profile.phone' => 'required', 'regex:/^0[0-9]{9}$/',
             'profile.email' => 'required', 'email',
@@ -67,6 +68,7 @@ class CreateCvRequest extends BaseRequest
     {
         return [
             'global' => 'Tiêu đề',
+            'cv_id' => 'CV',
             'profile' => 'Thông tin cá nhân',
             'profile.phone' => 'Số điện thoại',
             'profile.email' => 'Email',

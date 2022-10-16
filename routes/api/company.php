@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Company\CompanyController;
+use App\Http\Controllers\Job\JobController;
 
 // use Illuminate\Support\Facades\Auth;
 /*
@@ -16,11 +17,16 @@ use App\Http\Controllers\Company\CompanyController;
 |
 */
 // Auth::routes(['verify' => true]);
+Route::group([
+    'controller' => CompanyController::class, 
+], function () {
 
-Route::get('get-all', [CompanyController::class, 'getAll']);
-Route::get('get-top-list/', [CompanyController::class, 'getTopList']);
-Route::get('get-top/{topListId}', [CompanyController::class, 'getTop']);
-Route::get('get-by-id/{id}', [CompanyController::class, 'getById']);
+    Route::get('get-all', 'getAll');
+    Route::get('get-top-list/', 'getTopList');
+    Route::get('get-top/{topListId}', 'getTop');
+    Route::get('get-by-id/{id}', 'getById');
+});
+Route::get('get-all-job/{id}', [JobController::class, 'getJobOfCompany']);
 
 Route::group(['middleware'=>['auth:api']], function() {
     // Route::post('create', [CompanyController::class, 'create']);

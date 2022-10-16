@@ -7,6 +7,8 @@ use App\Repositories\CvRepository;
 use App\Repositories\CvVersionRepository;
 use App\Repositories\DataCvVersionRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use PhpParser\Node\Expr\FuncCall;
 
 class DataCvService
 {
@@ -16,6 +18,10 @@ class DataCvService
         public DataCvVersionRepository $dataCvVersionRepository,
     ) {
 
+    }
+
+    public function getModel() {
+        return $this->cvRepository->getModel();
     }
 
     public function getDataCv(Request $request)
@@ -94,4 +100,23 @@ class DataCvService
         return $this->cvVersionRepository->add($cvVersionData);
     }
     
+    public function getCvByIdOfUser($id)
+    {
+        $query = $this->getModel();
+        $this->cvRepository->query($query, [
+            'user_uuid' => Auth::id(),
+            'data_cv_id' => $id,
+        ]);
+        return $query->first();
+    }
+
+    public function listCvOfUser()
+    {
+        $query = $this->getModel();
+        $query->select(['cv_version_id', 'data_cv_id', 'user_uuid']);
+        $this->cvRepository->query($query, [
+            'user_uuid' => Auth::id(),
+        ]);
+        return $query->get(); 
+    }
 }

@@ -16,10 +16,20 @@ use App\Http\Controllers\Cv\CvController;
 // Auth::routes(['verify' => true]);
 
 
-Route::group(['middleware'=>['auth:api']], function() {
-    Route::post('create', [CvController::class, 'postCreate']);
-    
-    Route::get('search', [CvController::class, 'search']);
-});
+Route::group(
+    [
+        'middleware'=>[
+            'auth:api'
+        ],
+        'controller'=> CvController::class
+    ], function() {
+        Route::post('create', 'postCreate');
+        Route::post('update', 'postUpdate');
+        Route::get('get-all', 'getAllOfUser');
+        Route::get('view-by-id/{id}', 'getById');
+        
+        Route::get('search', 'search');
+    }
+);
 
 

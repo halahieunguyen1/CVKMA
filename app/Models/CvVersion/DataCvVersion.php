@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DataCvVersion extends Model
 {
-    protected $masterConnection = 'cvo';
     protected $table = 'data_cv_versions';
+    protected $hidden = [
+        'hash'
+    ];
+    protected $casts = [
+        'data' => 'object'
+    ];
 }

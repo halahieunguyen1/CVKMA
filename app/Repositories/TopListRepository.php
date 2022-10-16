@@ -12,7 +12,7 @@ class TopListRepository extends BaseRepository
             return TopList::query();
     }
 
-    public function query(Builder $query, Request $request) : void
+    public function query(Builder $query, $request) : void
     {
         // if ($request->title) {
         //     $query->where('title', 'like', "%$request->title%");

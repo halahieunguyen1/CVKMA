@@ -29,4 +29,10 @@ class TopListService
         return $query->get();
     }
 
+    public function getAllByTopId($id)
+    {
+        $query = $this->getModel();
+        return $query->whereId($id)->with('companies')->get();
+    }
+
 }

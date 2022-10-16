@@ -23,6 +23,11 @@ class CompanyService
     public function getModel() {
         return $this->companyRepo->getModel();
     }
+
+    public function find($id) : Company | null
+    {
+        return $this->companyRepo->find($id);
+    }
     
     public function get($query, Request $request) {
         $take = 10;
@@ -33,13 +38,14 @@ class CompanyService
         };
         $asc = $request->asc ?? true;
         $this->companyRepo->orderBy($query, $orderBy, $asc);
+        $count = $this->companyRepo->count($query);
 
         $page = $request->page ?? 0;
         $this->companyRepo->paginate($query, $page, $take);
 
         return [
             'companies' => $this->companyRepo->get($query),
-            'count' => $this->companyRepo->count($query)
+            'count' => $count,
         ];
     }
 

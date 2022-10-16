@@ -4,10 +4,21 @@ namespace App\Repositories;
 
 use App\Libs\Encrypt;
 use App\Models\DataCv;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
 
 class CvRepository
 {
+    public function find($id) : DataCv | null
+    {
+        return DataCv::find($id);
+    }
+
+    public function getModel()
+    {
+        return DataCv::query();
+    }
+
     public function add($data)
     {
         $cv = new DataCV;
@@ -34,5 +45,14 @@ class CvRepository
         return $cv;
     }
 
-    
+    public function query(Builder $query,  $option) : void
+    {
+        if ($option['user_uuid'] ?? null) {
+            $query->where('user_uuid', $option['user_uuid']);
+        }
+
+        if ($option['data_cv_id'] ?? null) {
+            $query->where('data_cv_id', $option['data_cv_id']);
+        }
+    }
 }

@@ -22,22 +22,27 @@ class JobController extends Controller
         $query = $this->jobService->getModel();
         switch (URL::current()) {
             case config('entrypoint.job') . "/job-it":
-                $this->jobService->queryJobIT($query, $request);
+                $this->jobService->queryJobIT($query);
                 break; 
             case config('entrypoint.job') . "/job-manager":
-                $this->jobService->queryJobManager($query, $request);
+                $this->jobService->queryJobManager($query);
                 break; 
             case config('entrypoint.job') . "/job-internship":
-                $this->jobService->queryJobInternship($query, $request);
+                $this->jobService->queryJobInternship($query);
                 break;
             case config('entrypoint.job') . "/job-high-salary":
-                $this->jobService->queryJobHighSalary($query, $request);
+                $this->jobService->queryJobHighSalary($query);
                 break;
             // case config('entrypoint.job') . "/job-manager":
             //     $this->jobService->queryJobIT($query, $request);
             //     break; 
         }
-
+        $query->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id');
+        $query->with([
+            'company' => function ($q) {
+                $q->select(['id', 'logo', 'name']);
+            }
+        ]);
         $jobs = $this->jobService->get($query, $request);
         return responseSuccess(data: $jobs);
     }
@@ -47,4 +52,14 @@ class JobController extends Controller
         $this->jobService->incViewJob($job);
         return $job;
     }
+
+    public function getJobOfCompany($companyId, Request $request)
+    {
+        $query = $this->jobService->getModel();
+        $this->jobService->getByCompany($query,$companyId);
+        $query->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id');
+        $jobs = $this->jobService->get($query, $request);
+        return responseSuccess(data: $jobs);
+    }
+
 }

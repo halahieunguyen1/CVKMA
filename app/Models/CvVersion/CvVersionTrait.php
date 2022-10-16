@@ -27,6 +27,13 @@ trait CvVersionTrait
         );
     }
 
+    public function title(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => optional($this->cvVersion)->dataCvVersion->data->global ?? ""
+        );
+    }
+
     public function template()
     {
         return optional($this->cvVersion)->template;

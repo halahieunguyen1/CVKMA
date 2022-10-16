@@ -1,0 +1,410 @@
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select `data_cv_id`, json_unquote(json_extract(`data`, '$."global"')) from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select `data_cv_id`, json_unquote(json_extract(`data`, '$."global"')) from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35417, 35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418, 35419)
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-16 00:28:50 and `publish_to` >= 2022-10-16 00:28:50 and `is_publish` = 1
+select * from `jobs` where `publish_from` <= 2022-10-16 00:28:50 and `publish_to` >= 2022-10-16 00:28:50 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-16 00:31:25 and `publish_to` >= 2022-10-16 00:31:25 and `is_publish` = 1
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-16 00:31:35 and `publish_to` >= 2022-10-16 00:31:35 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id` from `jobs` where `publish_from` <= 2022-10-16 00:31:35 and `publish_to` >= 2022-10-16 00:31:35 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select * from `companies` where 0 = 1
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-16 00:32:11 and `publish_to` >= 2022-10-16 00:32:11 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-16 00:32:11 and `publish_to` >= 2022-10-16 00:32:11 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select * from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-16 00:33:54 and `publish_to` >= 2022-10-16 00:33:54 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-16 00:33:54 and `publish_to` >= 2022-10-16 00:33:54 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-16 00:36:10 and `publish_to` >= 2022-10-16 00:36:10 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-16 00:36:10 and `publish_to` >= 2022-10-16 00:36:10 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all/id
+
+
+/api/cv/view-by-id/2
+
+
+/api/cv/view-by-id/5737623
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737623 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35419)
+
+
+/api/cv/view-by-id/5737623
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737623 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35419)
+
+
+/api/job/apply
+
+
+/api/job/apply
+
+
+/api/job/apply
+
+
+/api/job/apply
+
+
+/api/auth/login
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` is null limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` is null limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` is null limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+insert into `job_cv_applies` (`data_cv_id`, `letter`, `job_id`, `user_uuid`, `cv_version_id`, `fullname`, `email`, `phone`, `status`, `viewed`, `updated_at`, `created_at`) values (5737624, , 667335, 633c5be56132ba4f34e53a10, 35417, Nguyễn Văn Hiếu, hieunv@topcv, 0368505826, 0, 0, 2022-10-16 08:15:37, 2022-10-16 08:15:37)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+
+
+/api/company/get-all
+/api/company/get-all
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-top
+
+
+/api/company/get-top
+select * from `top_lists`
+
+
+/api/company/get-top-list
+select * from `top_lists`
+
+
+/api/company/get-by-id/105
+select * from `companies` where `companies`.`id` = 105 limit 1
+
+
+/api/company/get-top/1
+
+
+/api/company/get-top/1
+select * from `top_lists` where `id` = 1
+
+
+/api/company/get-top/1
+select * from `top_lists` where `id` = 1
+select `companies`.*, `company_top_list`.`top_list_id` as `pivot_top_list_id`, `company_top_list`.`company_id` as `pivot_company_id` from `companies` inner join `company_top_list` on `companies`.`id` = `company_top_list`.`company_id` where `company_top_list`.`top_list_id` in (1)
+
+
+/api/company/get-by-id/105
+select * from `companies` where `companies`.`id` = 105 limit 1
+
+
+/api/company/get-all-job/1
+select count(*) as aggregate from `jobs` where `company_id` = 1 and `publish_from` <= 2022-10-16 13:39:21 and `publish_to` >= 2022-10-16 13:39:21 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `company_id` = 1 and `publish_from` <= 2022-10-16 13:39:21 and `publish_to` >= 2022-10-16 13:39:21 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all-job/105
+select count(*) as aggregate from `jobs` where `company_id` = 105 and `publish_from` <= 2022-10-16 13:39:29 and `publish_to` >= 2022-10-16 13:39:29 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `company_id` = 105 and `publish_from` <= 2022-10-16 13:39:29 and `publish_to` >= 2022-10-16 13:39:29 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/cv/view-by-id/5737623
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737623 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35418)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35419)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+insert into `job_cv_applies` (`data_cv_id`, `letter`, `job_id`, `user_uuid`, `cv_version_id`, `fullname`, `email`, `phone`, `status`, `viewed`, `updated_at`, `created_at`) values (5737624, , 667335, 633c5be56132ba4f34e53a10, 35417, Nguyễn Văn Hiếu, hieunv@topcv, 0368505826, 0, 0, 2022-10-16 13:41:41, 2022-10-16 13:41:41)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+
+
+/api/auth/login
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+
+
+/api/job/apply
+/api/job/apply
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_cv_applies` where `user_uuid` = 633c5be56132ba4f34e53a10 and `job_id` = 667335 order by `id` asc limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737624 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35417)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35418)
+select * from `job_cv_applies` where `cv_version_id` = 35417 and `job_id` = 667335 limit 1
+
+

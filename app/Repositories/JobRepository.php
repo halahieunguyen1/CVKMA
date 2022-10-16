@@ -12,34 +12,39 @@ class JobRepository extends BaseRepository
             return Job::query();
     }
 
-    public function query(Builder $query, Request $request) : void
+    public function find($id) : Job|null
     {
-        if ($request->title) {
-            $query->where('title', 'like', "%$request->title%");
+        return Job::find($id);
+    }
+
+    public function query(Builder $query, $request) : void
+    {
+        if ($request['title'] ?? null) {
+            $query->where('title', 'like', "%" . $request['title'] . "%");
         }
 
-        if ($request->salary_type) {
-            $query->whereSalaryType($request->salary_type);
+        if ($request['salary_type'] ?? null) {
+            $query->whereSalaryType($request['salary_type']);
         }
 
-        // if ($request->salary_from) {
-        //     $query->where('salary_to', '>=', $request->salary_from);
+        // if ($request['salary_from'] ?? null) {
+        //     $query->where('salary_to', '>=', $request['salary_from']);
         // }
 
-        // if ($request->salary_to) {
-        //     $query->where('salary_from', '', $request->salary_from);
+        // if ($request['salary_to'] ?? null) {
+        //     $query->where('salary_from', '', $request['salary_from']);
         // }
 
-        // if ($request->exp_years_from) {
-        //     $query->where('salary_from', '', $request->salary_from);
+        // if ($request['exp_years_from'] ?? null) {
+        //     $query->where('salary_from', '', $request['salary_from']);
         // }
 
-         // if ($request->exp_years_to) {
-        //     $query->where('salary_to', '>=', $request->salary_from);
+         // if ($request['exp_years_to'] ?? null) {
+        //     $query->where('salary_to', '>=', $request['salary_from']);
         // }
 
-        if ($request->position_id) {
-            $query->where('position_id', $request->position_id);
+        if ($request['position_id'] ?? null) {
+            $query->where('position_id', $request['position_id']);
         }
 
     }

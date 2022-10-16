@@ -111,4 +111,14 @@ class Job extends Model
         });
     }
 
+    public function isExpired()
+    {
+        return ($this->deadline < date('Y-m-d'));
+    }
+
+    public function isPublishDateExpired()
+    {
+        return $this->publish_to < date('Y-m-d H:i:s');
+    }
+
 }
