@@ -38,7 +38,7 @@ class DataCv extends Model
     ];
 
     protected $casts = [
-        'data' => 'array',
+        'data' => 'object',
         'deleted_at' => 'datetime', 
         'updated_at' => 'datetime',
         'uptop_at' => 'datetime',

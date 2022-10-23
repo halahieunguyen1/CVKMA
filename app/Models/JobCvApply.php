@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
+use App\Enums\JobApplyEnum;
 use App\Models\CvVersion\CvVersionTrait;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -54,6 +56,15 @@ class JobCvApply extends Model
     public function employer()
     {
         return $this->belongsTo('App\Models\Employer', 'employer_id', 'id');
+    }
+
+    public function scopeIsValuable($query)
+    {
+        return $query
+        ->whereIn('status', [JobApplyEnum::STATUS_VIEWED, JobApplyEnum::STATUS_INIT])
+        ->whereHas('job', function ($q) {
+            $q->publish();
+        });
     }
 
     public static function boot() {

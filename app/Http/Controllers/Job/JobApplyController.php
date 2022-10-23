@@ -62,4 +62,11 @@ class JobApplyController extends Controller
             return reponseError(message: MessageEnum::BASE_FAILD, statusCode: 404);
         }
     }
+
+    public function getApply(Request $request)
+    {
+        $type = $request->input('type') ?? JobApplyEnum::GET_JOB_CURRENT_APPLY;
+        $jobs = $this->jobApplyService->getJobApply($type);
+        return responseSuccess(data: $jobs);
+    }
 }

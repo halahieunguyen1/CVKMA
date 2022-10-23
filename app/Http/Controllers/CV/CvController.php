@@ -36,15 +36,14 @@ class CvController extends Controller
         $font      = $request->get('font') ?? 'roboto';
         $fontsize   = $request->get('font_size') ?? 'normal';
         $spacing    = $request->get('spacing') ?? 'normal';
-        $data       = json_encode($this->cvService->getDataCv($request));
-
+        $data       = $this->cvService->getDataCv($request);
         $cvData = compact('lang', 'color', 'font', 'fontsize', 'spacing', 'data');
         try {
             DB::beginTransaction();
             $cv = $this->cvService->createCv($cvData);
             if ($cv) {
                 DB::commit();
-                return responseSuccess(data: []);
+                return responseSuccess(data: ['data_cv_id', $cv->data_cv_id]);
             }
         } catch (\Exception $e) {
             DB::rollback();
@@ -65,7 +64,7 @@ class CvController extends Controller
         $font      = $request->get('font') ?? 'roboto';
         $fontsize   = $request->get('font_size') ?? 'normal';
         $spacing    = $request->get('spacing') ?? 'normal';
-        $data       = json_encode($this->cvService->getDataCv($request));
+        $data       = $this->cvService->getDataCv($request);
 
         $cvData = compact('lang', 'color', 'font', 'fontsize', 'spacing', 'data');
         try {
@@ -73,7 +72,7 @@ class CvController extends Controller
             $cv = $this->cvService->updateVersionCv($cv, $cvData);
             if ($cv) {
                 DB::commit();
-                return responseSuccess(data: []);
+                return responseSuccess(data: ['data_cv_id', $cv->data_cv_id]);
             }
         } catch (\Exception $e) {
             DB::rollback();

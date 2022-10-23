@@ -10,6 +10,9 @@ class CvVersion extends Model
     protected $hidden = [
         'hash_all'
     ];
+    protected $casts = [
+        'data' => 'array',
+    ];
     public function dataCvVersion()
     {
         return $this->belongsTo('App\Models\CvVersion\DataCvVersion', 'data_cv_version_id');

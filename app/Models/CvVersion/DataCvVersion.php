@@ -11,6 +11,6 @@ class DataCvVersion extends Model
         'hash'
     ];
     protected $casts = [
-        'data' => 'object'
+        'data' => 'json'
     ];
 }

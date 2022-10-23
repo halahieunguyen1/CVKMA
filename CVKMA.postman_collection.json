@@ -14,46 +14,17 @@
 					"item": [
 						{
 							"name": "All",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{token}}",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "",
-											"value": "50",
-											"type": "text"
-										}
-									]
-								},
 								"url": {
-									"raw": "{{url}}/job/get-all?position_id=1",
+									"raw": "{{url}}/job/get-all",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"job",
 										"get-all"
-									],
-									"query": [
-										{
-											"key": "position_id",
-											"value": "1"
-										}
 									]
 								}
 							},
@@ -125,7 +96,50 @@
 					"name": "Apply",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "ApplyJob",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "job_id",
+											"value": "667335",
+											"type": "text"
+										},
+										{
+											"key": "cv_id",
+											"value": "5737624",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/job/apply",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"apply"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetJobCurrentApply",
 							"request": {
 								"method": "GET",
 								"header": []
@@ -275,19 +289,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}/job/get-all?position_id=1",
+							"raw": "{{url}}/company/get-top-list",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"job",
-								"get-all"
-							],
-							"query": [
-								{
-									"key": "position_id",
-									"value": "1"
-								}
+								"company",
+								"get-top-list"
 							]
 						}
 					},
@@ -454,7 +462,7 @@
 								},
 								{
 									"key": "password",
-									"value": "hieuhala127",
+									"value": "hieuhala127!@#",
 									"type": "text"
 								}
 							]
@@ -570,7 +578,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \r\n    \"profile\": { \r\n        \"email\": \"hieunv@topcv\",\r\n        \"address\": \"Từ Sơn - Bắc Ninh\",\r\n        \"fullname\": \"Nguyễn Văn Hiếu\",\r\n        \"phone\": \"0368505826\"\r\n    },\r\n    \"education\" : [\r\n        {\r\n            \"start\": \"2020\",\r\n            \"end\": \"nay\",\r\n            \"description\": \"Học 3 năm tại Học viện kĩ thuật Mật Mã\",\r\n            \"school\": \"Học viện Kĩ Thuật Mật Mã\",\r\n            \"majors\": \"Công nghệ thông tin\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"global\": \"Lập trình viên PHP\",\r\n    \"profile\": { \r\n        \"email\": \"hieunv@topcv\",\r\n        \"address\": \"Từ Sơn - Bắc Ninh\",\r\n        \"fullname\": \"Nguyễn Văn Hiếu\",\r\n        \"phone\": \"0368505826\"\r\n    },\r\n    \"education_meta\": \"Học Vấn\",\r\n    \"education\" : [\r\n        {\r\n            \"start\": \"2020\",\r\n            \"end\": \"nay\",\r\n            \"description\": \"Học 3 năm tại Học viện kĩ thuật Mật Mã\",\r\n            \"school\": \"Học viện Kĩ Thuật Mật Mã\",\r\n            \"majors\": \"Công nghệ thông tin\"\r\n        },\r\n        {\r\n            \"start\": \"2015\",\r\n            \"end\": \"2018\",\r\n            \"description\": \"Từng học khóa chuyên Tin tại trường trung học phổ thông chuyên Bắc Ninh\",\r\n            \"school\": \"Trung học phổ thông chuyên Bắc Ninh\",\r\n            \"majors\": \"Khóa chuyên Tin 15-18\"\r\n        }\r\n    ],\r\n    \"experience_meta\": \"Kinh nghiệm\",\r\n    \"experience\": [\r\n        {\r\n            \"start\": \"07-2021\",\r\n            \"end\": \"nay\",\r\n            \"company\": \"Công ty Cổ phần TopCv\",\r\n            \"position\": \"Software Engineer\",\r\n            \"description\": \"Vận hành, bảo trì và phát triển sản phẩm nội bộ của công ty\" \r\n        }\r\n    ],\r\n    \"activity_meta\": \"Hoạt động\",\r\n    \"activity\": [\r\n        {\r\n            \"start\": \"07-2019\",\r\n            \"end\": \"10-2019\",\r\n            \"position\": \"Tình nguyện viên\",\r\n            \"organization\": \"Tổ chức Từ thiện Quốc tế cho Người khuyết tật tại Việt Nam\",\r\n            \"description\": \"Tham gia các cuộc vận động gây quỹ ủng hộ cho những người khuyết tật tại Việt Nam\"\r\n        },\r\n        {\r\n            \"start\": \"07-2018\",\r\n            \"end\": \"10-2019\",\r\n            \"position\": \"Thành viên\",\r\n            \"organization\": \"Câu lạc bộ máu KMA\",\r\n            \"description\": \"Tham gia hiến máu và tuyên truyền, vận động mọi người đi hiến máu\"\r\n        }\r\n    ],\r\n    \"certification_meta\": \"Chứng chỉ\",\r\n    \"certification\": [\r\n        {\r\n            \"start\": \"2018\",\r\n            \"name\": \"Bằng tốt nghiệp trung học phổ thông\"\r\n        },\r\n        {\r\n            \"start\": \"2022\",\r\n            \"name\": \"Chứng chỉ Toeic 450+\"\r\n        }\r\n    ],\r\n    \"award_meta\": \"Thành tích\",\r\n    \"award\": [\r\n        {\r\n            \"start\": 2016,\r\n            \"name\": \"Huy chương đồng kì thi Olympic Duyên Hải và đồng bằng Bắc Bộ môn Tin học\"\r\n        },\r\n        {\r\n            \"start\": 2014,\r\n            \"name\": \"Giải nhất tỉnh cuộc thi Olympic môn Toán\"\r\n        }\r\n    ],\r\n    \"skillrate_meta\": \"Kĩ năng\",\r\n    \"skillrate\": [\r\n        {\r\n            \"title\": \"PHP\",\r\n            \"description\": \"Có kinh nghiện 1 năm phát triển web server bằng PHP, nắm vững các kiến thức về OOP, giao tiếp với database\"\r\n        },\r\n        {\r\n            \"title\": \"Laravel\",\r\n            \"description\": \"Có kinh nghiệm 1 năm xây dựng các web server PHP bằng framework Laravel\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -607,7 +615,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"cv_id\": 5737623,\r\n    \"global\": \"Lập trình viên PHP\",\r\n    \"profile\": { \r\n        \"email\": \"hieunv@topcv\",\r\n        \"address\": \"Từ Sơn- Bắc Ninh\",\r\n        \"fullname\": \"Nguyễn Văn Hiếu\",\r\n        \"phone\": \"0368505826\"\r\n    },\r\n    \"education\" : [\r\n        {\r\n            \"start\": \"2020\",\r\n            \"end\": \"nay\",\r\n            \"description\": \"Học 3 năm tại Học viện kĩ thuật Mật Mã\",\r\n            \"school\": \"Học viện Kĩ Thuật Mật Mã\",\r\n            \"majors\": \"Công nghệ thông tin\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"cv_id\": 5737623,\r\n    \"global\": \"Lập trình viên PHP\",\r\n    \"profile\": { \r\n        \"email\": \"hieunv@topcv\",\r\n        \"address\": \"Từ Sơn- Bắc Ninha\",\r\n        \"fullname\": \"Nguyễn Văn Hiếu\",\r\n        \"phone\": \"0368505826\"\r\n    },\r\n    \"education\" : [\r\n        {\r\n            \"start\": \"2020\",\r\n            \"end\": \"nay\",\r\n            \"description\": \"Học 3 năm tại Học viện kĩ thuật Mật Mã\",\r\n            \"school\": \"Học viện Kĩ Thuật Mật Mã\",\r\n            \"majors\": \"Công nghệ thông tin\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -630,25 +638,55 @@
 				{
 					"name": "ListAll",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cv/get-all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cv",
+								"get-all"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "View Cv",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/cv/view-by-id/",
+							"raw": "{{url}}/cv/view-by-id/5737646",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"cv",
 								"view-by-id",
-								""
+								"5737646"
 							]
 						}
 					},

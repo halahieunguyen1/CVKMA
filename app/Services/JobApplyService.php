@@ -4,6 +4,7 @@
 namespace App\Services;
 
 use App\Enums\CategoryEnum;
+use App\Enums\JobApplyEnum;
 use App\Enums\Response\MessageEnum;
 use App\Repositories\JobRepository;
 use Carbon\Carbon;
@@ -12,6 +13,7 @@ use Illuminate\Http\Request;
 use App\Models\Job;
 use App\Repositories\CvRepository;
 use App\Repositories\JobApplyRepository;
+use Illuminate\Support\Facades\Auth;
 
 class JobApplyService
 {
@@ -39,6 +41,21 @@ class JobApplyService
         $this->jobApplyRepo->query($query, $options);
         $this->jobApplyRepo->orderBy($query, 'id', 'desc');
         return $query->first();
+   }
+
+   public function getJobApply($type)
+   {
+        $query = self::getModel();
+        $this->jobApplyRepo->query($query, [
+            'user_uuid' => Auth::id(),
+        ]);
+        if ($type == JobApplyEnum::GET_JOB_CURRENT_APPLY) {
+            $query->isValuable();
+        }
+        $this->jobApplyRepo->orderBy($query, 'created_at', 'desc');
+        $query->with('job');
+        $query->select(['created_at', 'user_uuid', 'job_id', 'id']);
+        return $query->get();
    }
 
    public function apply($options)

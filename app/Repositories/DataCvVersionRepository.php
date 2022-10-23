@@ -18,7 +18,7 @@ class DataCvVersionRepository
 
     private function createHashData($data)
     {
-        return hex2bin(md5($data));
+        return hex2bin(md5(json_encode($data)));
     }
 
     public function getDataCvVersionByHash($dataCv, $dataCvId)

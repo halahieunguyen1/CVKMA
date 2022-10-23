@@ -34,7 +34,7 @@ class CvVersionRepository
         $lang = $data['lang'] ?? "";
         $font = $data['font'] ?? "";
         $templateId = $data['template_id'] ?? "";
-        $hash = hex2bin(md5($data['data'] . $colorSchema . $fontSize . $spacing . $lang . $font . $templateId));
+        $hash = hex2bin(md5(json_encode($data['data']) . $colorSchema . $fontSize . $spacing . $lang . $font . $templateId));
         return $hash;
     }
 
