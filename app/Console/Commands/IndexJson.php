@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use PDO;
 
-class Login extends Command
+class IndexJson extends Command
 {
     /**
      * The name and signature of the console command.

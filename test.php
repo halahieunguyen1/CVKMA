@@ -34,7 +34,3 @@ function getAll() {
     return $data;
 
 }
-$rows = cursor();
-foreach($rows as $row) {
-    echo $row['user_id'];
-}

@@ -11,8 +11,16 @@ int main()   // define the main function
         k++;
         m *= 10;
     }
-    long long index = pow(10, k - 1 -(n + 1) % k);
+    long long index = 1;
+    printf("%lld\n", n );  // print the statement.  
+    printf("%lld\n", k );  // print the statement.  
+    for (int j = k - 1 - n % k; j >0; j--) {
+        index = index * 10;
+    };
     n = m / 9 + (n - 1) / k;
+    printf("%lld\n", n );  // print the statement.  
+    printf("%lld\n", index );  // print the statement.  
+
     printf("%lld", (n / index) % 10);  // print the statement.  
     return 0;
 }  
