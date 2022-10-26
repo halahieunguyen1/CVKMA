@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Arr;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class DataCv extends Model
 {
@@ -39,7 +40,7 @@ class DataCv extends Model
 
     protected $casts = [
         'data' => 'object',
-        'deleted_at' => 'datetime', 
+        'deleted_at' => 'datetime',
         'updated_at' => 'datetime',
         'uptop_at' => 'datetime',
     ];
@@ -47,6 +48,13 @@ class DataCv extends Model
     public function user()
     {
         return $this->belongsTo('App\Models\User', 'user_uuid', 'uuid');
+    }
+
+    public function title(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->data['global']
+        );
     }
 
     public function toArray()

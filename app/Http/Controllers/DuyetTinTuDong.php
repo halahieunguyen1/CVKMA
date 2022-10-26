@@ -10,16 +10,16 @@ use App\Libs\HtmlDiffConfig;
 class DuyetTinTuDong extends Controller
 {
     public function diff(Request $request) {
-        
 
- 
+
+
     $oldHtml = "Chuyên......                 Viên Tư Vấn Tài Chính_ Làm Việc Tại SHINHAN Hà Nội (Chi Nhánh Mới)_Thu Nhập Từ <i>11 Triệu</i>";
     $newHtml = "Chuyên Viên Tư Vấn Tài Chính_ Làm Việc Tại SEABANK Đại Từ_Thu Nhập Từ 480Usd
     Địa điểm	Hà Nội	 <a>11 Triệu</a>";
     $data = $this->diffHtml($oldHtml, $newHtml);
         return view('diff', $data);
     }
-    
+
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
