@@ -37,7 +37,7 @@ class JobController extends Controller
             //     $this->jobService->queryJobIT($query, $request);
             //     break; 
         }
-        $query->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id');
+        $query->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id', 'description');
         $query->with([
             'company' => function ($q) {
                 $q->select(['id', 'logo', 'name']);
@@ -57,7 +57,7 @@ class JobController extends Controller
     {
         $query = $this->jobService->getModel();
         $this->jobService->getByCompany($query,$companyId);
-        $query->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id');
+        $query->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id', 'description');
         $jobs = $this->jobService->get($query, $request);
         return responseSuccess(data: $jobs);
     }

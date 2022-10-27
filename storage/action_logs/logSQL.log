@@ -966,3 +966,74 @@ select * from `cv_versions` where `cv_versions`.`id` in (35437)
 select * from `data_cv_versions` where `data_cv_versions`.`id` in (35440)
 
 
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-27 21:11:12 and `publish_to` >= 2022-10-27 21:11:12 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-27 21:11:12 and `publish_to` >= 2022-10-27 21:11:12 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all-job/105
+select count(*) as aggregate from `jobs` where `company_id` = 105 and `publish_from` <= 2022-10-27 21:12:17 and `publish_to` >= 2022-10-27 21:12:17 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `company_id` = 105 and `publish_from` <= 2022-10-27 21:12:17 and `publish_to` >= 2022-10-27 21:12:17 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-27 21:13:25 and `publish_to` >= 2022-10-27 21:13:25 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-27 21:13:25 and `publish_to` >= 2022-10-27 21:13:25 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-27 21:13:33 and `publish_to` >= 2022-10-27 21:13:33 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-27 21:13:33 and `publish_to` >= 2022-10-27 21:13:33 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/get-by-id/%7B%7BjobId%7D%7D
+
+
+/api/get-by-id/667335
+
+
+/api/get-by-id/667335
+
+
+/api/job/get-by-id/667335
+select * from `jobs` where `publish_from` <= 2022-10-27 21:14:32 and `publish_to` >= 2022-10-27 21:14:32 and `is_publish` = 1 and `jobs`.`id` = 667335 limit 1
+select * from `companies` where `companies`.`id` in (97705)
+update `jobs` set `view` = 97 where `id` = 667335
+
+
+/api/job/job-manager
+select count(*) as aggregate from `jobs` where `position_id` in (3, 10, 20, 25, 30) and `publish_from` <= 2022-10-27 21:15:00 and `publish_to` >= 2022-10-27 21:15:00 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `position_id` in (3, 10, 20, 25, 30) and `publish_from` <= 2022-10-27 21:15:00 and `publish_to` >= 2022-10-27 21:15:00 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (4055, 53502, 69928, 75786, 97705, 97720, 97770, 97878, 97919, 97961)
+
+
+/api/job/job-intership
+
+
+/api/job/job-internship
+select count(*) as aggregate from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:15:44 and `publish_to` >= 2022-10-27 21:15:44 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:15:44 and `publish_to` >= 2022-10-27 21:15:44 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (24160, 34434, 71371, 76301, 97826, 97936, 97968, 98128, 98150, 98294)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:16:07 and `publish_to` >= 2022-10-27 21:16:07 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:16:07 and `publish_to` >= 2022-10-27 21:16:07 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (24160, 34434, 71371, 76301, 97826, 97936, 97968, 98128, 98150, 98294)
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-10-27 21:17:44 and `publish_to` >= 2022-10-27 21:17:44 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id` from `jobs` where `publish_from` <= 2022-10-27 21:17:44 and `publish_to` >= 2022-10-27 21:17:44 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/get-by-id/667335
+select * from `jobs` where `publish_from` <= 2022-10-27 21:23:24 and `publish_to` >= 2022-10-27 21:23:24 and `is_publish` = 1 and `jobs`.`id` = 667335 limit 1
+select * from `companies` where `companies`.`id` in (97705)
+update `jobs` set `view` = 98 where `id` = 667335
+
+

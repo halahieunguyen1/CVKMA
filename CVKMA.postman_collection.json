@@ -18,13 +18,55 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/job/get-all",
+									"raw": "{{url}}/job/get-all?title&salary_type&salary_from&salary_to&exp_years_from&exp_years_to&position_id",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"job",
 										"get-all"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": null,
+											"description": "Tìm kiếm theo tiêu đề"
+										},
+										{
+											"key": "salary_type",
+											"value": null,
+											"description": "Tìm kiếm theo loại lương (VNĐ:0 và USD:1)"
+										},
+										{
+											"key": "salary_from",
+											"value": null,
+											"description": "Mức lương từ"
+										},
+										{
+											"key": "salary_to",
+											"value": null,
+											"description": "Mức lương đến"
+										},
+										{
+											"key": "exp_years_from",
+											"value": null,
+											"description": "Chưa xong"
+										},
+										{
+											"key": "exp_years_to",
+											"value": null,
+											"description": "Chưa xong"
+										},
+										{
+											"key": "position_id",
+											"value": null,
+											"description": "Vị trí, xem file JobEnum ở thư mục app/Enum để xem id các vị trí"
+										},
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
 									]
 								}
 							},
@@ -52,7 +94,17 @@
 							"name": "Manager",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/job-manager",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"job-manager"
+									]
+								}
 							},
 							"response": []
 						},
@@ -60,7 +112,17 @@
 							"name": "InterShip",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/job-internship",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"job-internship"
+									]
+								}
 							},
 							"response": []
 						},
@@ -68,23 +130,44 @@
 							"name": "HighSalary",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/job-high-salary",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"job-high-salary"
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "GetById",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/get-by-id/{{jobId}}",
+									"raw": "{{url}}/job/get-by-id/667335",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
+										"job",
 										"get-by-id",
-										"{{jobId}}"
+										"667335"
 									]
 								}
 							},
@@ -141,8 +224,35 @@
 						{
 							"name": "GetJobCurrentApply",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/get-job-applies?type=0",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"get-job-applies"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "0",
+											"description": "type = 0 lấy ra các job đang apply => NTD chưa xem hoặc đã xem mà chưa có action nào, và job đang publish có deadline  > hiện tại, type = 1 là lấy hết "
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -346,7 +456,18 @@
 					"name": "GetTopByOption",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company/get-top/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company",
+								"get-top",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -373,7 +494,18 @@
 					"name": "Get All Job",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company/get-all-job/105",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company",
+								"get-all-job",
+								"105"
+							]
+						}
 					},
 					"response": []
 				}

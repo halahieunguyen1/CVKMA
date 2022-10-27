@@ -27,21 +27,21 @@ class JobRepository extends BaseRepository
             $query->whereSalaryType($request['salary_type']);
         }
 
-        // if ($request['salary_from'] ?? null) {
-        //     $query->where('salary_to', '>=', $request['salary_from']);
-        // }
+        if ($request['salary_from'] ?? null) {
+            $query->where('salary_to', '>=', $request['salary_from']);
+        }
 
-        // if ($request['salary_to'] ?? null) {
-        //     $query->where('salary_from', '', $request['salary_from']);
-        // }
+        if ($request['salary_to'] ?? null) {
+            $query->where('salary_from', '<=', $request['salary_to']);
+        }
 
-        // if ($request['exp_years_from'] ?? null) {
-        //     $query->where('salary_from', '', $request['salary_from']);
-        // }
+        if ($request['exp_years_from'] ?? null) {
+            $query->where('exp_years_to', '>=', $request['exp_years_from']);
+        }
 
-         // if ($request['exp_years_to'] ?? null) {
-        //     $query->where('salary_to', '>=', $request['salary_from']);
-        // }
+        if ($request['exp_years_to'] ?? null) {
+            $query->where('exp_years_from', '>=', $request['exp_years_to']);
+        }
 
         if ($request['position_id'] ?? null) {
             $query->where('position_id', $request['position_id']);
