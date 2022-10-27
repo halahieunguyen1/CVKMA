@@ -20,16 +20,16 @@ class DatabaseSeeder extends Seeder
         $arr = [
             // new DataCvSeeder(),
             new CompanySeeder(),
-            new FieldSeeder(),
-            new JobSeeder(),
-            new EmployerSeeder(),
-            new CitySeeder(),
-            new SkillSeeder(),
-            new CategorySeeder(),
-            new JobCategorySeeder(),
-            new TopListSeeder(),
-            new TopListSeeder(),
-            new JobCvApplySeeder()
+            // new FieldSeeder(),
+            // new JobSeeder(),
+            // new EmployerSeeder(),
+            // new CitySeeder(),
+            // new SkillSeeder(),
+            // new CategorySeeder(),
+            // new JobCategorySeeder(),
+            // new TopListSeeder(),
+            // new TopListSeeder(),
+            // new JobCvApplySeeder()
         ];
         foreach ($arr as $item) {
             $item->run();
