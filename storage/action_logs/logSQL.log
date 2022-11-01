@@ -1122,3 +1122,20 @@ select * from `data_cv_versions` where `data_cv_versions`.`id` in (35386)
 >>>>>>> 4d6e6081a184144819060f3fdc77ea0cf3aea99d
 
 
+/api/job/job-internship
+select count(*) as aggregate from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:26:34 and `publish_to` >= 2022-10-27 21:26:34 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:26:34 and `publish_to` >= 2022-10-27 21:26:34 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (24160, 34434, 71371, 76301, 97826, 97936, 97968, 98128, 98150, 98294)
+
+
+/api/job/job-internship
+select count(*) as aggregate from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:26:42 and `publish_to` >= 2022-10-27 21:26:42 and `is_publish` = 1 and `title` like %Hieu%
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:26:42 and `publish_to` >= 2022-10-27 21:26:42 and `is_publish` = 1 and `title` like %Hieu% order by `id` asc limit 10 offset 0
+
+
+/api/job/job-internship
+select count(*) as aggregate from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:26:46 and `publish_to` >= 2022-10-27 21:26:46 and `is_publish` = 1 and `title` like %Thực%
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `position_id` = 50 and `publish_from` <= 2022-10-27 21:26:46 and `publish_to` >= 2022-10-27 21:26:46 and `is_publish` = 1 and `title` like %Thực% order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (24160, 71371, 76301, 85153, 97826, 97936, 98150, 98294, 98306, 98706)
+
+
