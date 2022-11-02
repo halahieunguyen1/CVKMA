@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Models\JobCvApply;
+use App\Models\Job\JobCvApply;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 

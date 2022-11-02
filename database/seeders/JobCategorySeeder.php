@@ -5,7 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Illuminate\Database\Seeder;
-use App\Models\JobCategory;
+use App\Models\Job\JobCategory;
 use App\Traits\SeederTrait;
 class JobCategorySeeder extends Seeder
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Job;
 
 use App\Enums\JobApplyEnum;
 use App\Models\CvVersion\CvVersionTrait;
@@ -36,7 +36,7 @@ class JobCvApply extends Model
 
     public function job()
     {
-        return $this->belongsTo('\App\Models\Job', 'job_id', 'id');
+        return $this->belongsTo('\App\Models\Job\Job', 'job_id', 'id');
     }
 
     public function cv()

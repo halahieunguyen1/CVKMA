@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Models\Job;
+use App\Models\Job\Job;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 

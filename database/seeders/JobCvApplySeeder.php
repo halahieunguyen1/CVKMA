@@ -6,8 +6,8 @@ namespace Database\Seeders;
 
 use App\Enums\jobApplyEnum;
 use Illuminate\Database\Seeder;
-use App\Models\jobApply;
-use App\Models\JobCvApply;
+use App\Models\Job\JobApply;
+use App\Models\Job\JobCvApply;
 use App\Traits\SeederTrait;
 class JobCvApplySeeder extends Seeder
 {

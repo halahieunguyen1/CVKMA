@@ -257,6 +257,77 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Favorite",
+					"item": [
+						{
+							"name": "Favorite",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/favorite/667357",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"favorite",
+										"667357"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UnFavorite",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/unfavorite/667357",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"unfavorite",
+										"667357"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetFavorite",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},

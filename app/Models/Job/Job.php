@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Job;
 
 use App\Enums\JobEnum;
 use Carbon\Carbon;

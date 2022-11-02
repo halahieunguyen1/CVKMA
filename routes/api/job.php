@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Job\JobApplyController;
+use App\Http\Controllers\Job\JobFavoriteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Job\JobController;
@@ -39,6 +40,15 @@ Route::group([
 ], function() {
     Route::post('apply', 'postApply');
     Route::get('get-job-applies', 'getApply');
+});
+
+Route::group([
+    'controller' => JobFavoriteController::class,
+    'middleware' => ['auth:api'],
+], function() {
+    Route::post('favorite/{id}', 'favorite');
+    Route::post('unfavorite/{id}', 'unFavorite');
+    Route::get('get-job-favorite', 'getFavorite');
 });
 
 

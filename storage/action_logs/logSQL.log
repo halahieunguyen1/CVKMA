@@ -1139,3 +1139,71 @@ select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `qu
 select `id`, `logo`, `name` from `companies` where `companies`.`id` in (24160, 71371, 76301, 85153, 97826, 97936, 98150, 98294, 98306, 98706)
 
 
+/api/job/favorite/667335
+
+
+/api/auth/login
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-11-03 05:43:32 and `publish_to` >= 2022-11-03 05:43:32 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2022-11-03 05:43:32 and `publish_to` >= 2022-11-03 05:43:32 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/favorite/667335
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667335 limit 1
+select * from `job_favorites` where (`job_id` = 667335 and `user_uuid` = 633c5be56132ba4f34e53a10) limit 1
+
+
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/favorite/667335
+/api/job/favorite/667334
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667334 limit 1
+
+
+/api/job/favorite/667357
+/api/job/favorite/667357
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667357 limit 1
+select * from `job_favorites` where (`job_id` = 667357 and `user_uuid` = 633c5be56132ba4f34e53a10) limit 1
+
+
+/api/job/unfavorite/667357
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667357 limit 1
+delete from `job_favorites` where `job_id` = 667357 and `user_uuid` = 633c5be56132ba4f34e53a10
+
+
+/api/job/unfavorite/667357
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667357 limit 1
+delete from `job_favorites` where `job_id` = 667357 and `user_uuid` = 633c5be56132ba4f34e53a10
+
+
+/api/job/get-job-favorite
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `id` = 667335
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
+
+

@@ -33,7 +33,25 @@ class ArrayChildIntersect
         $index = 0;
         $start = 0;
         $end = 0;
-        $flag = 'replace';
+        if (!count($arrayParent)) {
+            return [];
+        }
+
+        if (!count($arrayIntersect)) {
+            return [
+                [
+                    'delete' => [
+                        0, count($arrayParent)- 1,
+                    ]
+                ]
+            ];
+        }
+
+        if ($arrayParent[0] == $arrayIntersect) {
+            $flag = 'replace';
+        } else {
+            $flag = $key1;
+        }
         $countIntersect = count($arrayIntersect);
         $result = [
         ];
@@ -64,10 +82,12 @@ class ArrayChildIntersect
         }
         $end = $key;
         if ($flag == 'replace') {
+            dd(1);
             $result[] = [
                 'replace' => [$start, $end],
             ];
         } else {
+            dd(2);
             $result[] = [
                 $key1 => [$start, $end],
             ];

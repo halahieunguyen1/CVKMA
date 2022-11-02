@@ -10,7 +10,7 @@ use App\Repositories\JobRepository;
 use Carbon\Carbon;
 use \Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
-use App\Models\Job;
+use App\Models\Job\Job;
 use App\Repositories\CvRepository;
 use App\Repositories\JobApplyRepository;
 use Illuminate\Support\Facades\Auth;

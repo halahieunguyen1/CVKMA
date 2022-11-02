@@ -6,7 +6,7 @@ use App\Jobs\CreateCvVersions;
 use App\Models\DataCv;
 use App\Models\User;
 use App\Traits\SeederTrait;
-use App\Models\JobCvApply;
+use App\Models\Job\JobCvApply;
 use Illuminate\Console\Command;
 use Illuminate\Bus\Batch;
 use Illuminate\Support\Facades\Bus;
