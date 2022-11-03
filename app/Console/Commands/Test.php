@@ -29,6 +29,7 @@ class Test extends Command
     public function handle()
     {
         $intersect = ArrayChildIntersect::intersect([1, 2, 3, 5, 7, 8, 9, 1, 4], [4, 2, 3, 5, 8, 7, 8, 9, 1]);    
+        dump($intersect['value']);
         $diffOne = ArrayChildIntersect::intersect1([1, 2, 3, 5, 7, 8, 9, 1, 4], $intersect['value']);
     }
 }

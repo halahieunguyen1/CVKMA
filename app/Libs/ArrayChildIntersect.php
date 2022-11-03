@@ -55,12 +55,13 @@ class ArrayChildIntersect
         $countIntersect = count($arrayIntersect);
         $result = [
         ];
+        dump(count($arrayParent));
         foreach ($arrayParent as $key => $value) {
-            if ($value == $arrayIntersect[$index]) {
+            if ($value == ($arrayIntersect[$index] ?? null)) {
                 $index++;
-                if ($index >= $countIntersect) {
-                    break;
-                }
+                // if ($index >= $countIntersect) {
+                //     continue;
+                // }
                 if ($flag != 'replace') {
                     $end = $key - 1;
                     $result[] = [
@@ -82,16 +83,15 @@ class ArrayChildIntersect
         }
         $end = $key;
         if ($flag == 'replace') {
-            dd(1);
             $result[] = [
                 'replace' => [$start, $end],
             ];
         } else {
-            dd(2);
             $result[] = [
                 $key1 => [$start, $end],
             ];
         }
+        
         dd($result);
     }
 }
