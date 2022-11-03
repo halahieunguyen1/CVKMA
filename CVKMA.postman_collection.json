@@ -322,8 +322,28 @@
 						{
 							"name": "GetFavorite",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{url}}/job/get-job-favorite",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"job",
+										"get-job-favorite"
+									]
+								}
 							},
 							"response": []
 						}
