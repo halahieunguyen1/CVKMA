@@ -1207,3 +1207,35 @@ select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `qu
 select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
 
 
+/api/auth/login
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `id` = 667335
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `id` = 667335
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `id` = 667335
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `id` = 667335
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
+
+
