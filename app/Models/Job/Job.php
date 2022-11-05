@@ -78,6 +78,13 @@ class Job extends Model
         return $query->whereIn('position_id', JobEnum::POSITION_MANAGER);
     }
 
+    public function scopeHighsalary($query)
+    {
+        return $query->orderByRaw(
+            "case when salary_type = 0 then salary_to ELSE salary_to * 22000 end desc"
+        );
+    }
+
     public function scopeInternship($query)
     {
         return $query->where('position_id', JobEnum::JOB_INTERSHIP);

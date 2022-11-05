@@ -66,7 +66,7 @@ class JobService
     }
 
     public function queryJobHighSalary(Builder $query) {
-        $query->internship();
+        $query->highsalary();
     }
 
     public function getDetail(int $jobId) : Job
