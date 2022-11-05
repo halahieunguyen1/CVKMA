@@ -53,7 +53,7 @@ class DataCv extends Model
     public function title(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->data['global']
+            get: fn () => $this->data['global']['cv_title'] ?? $this->data['global'] ?? "Tiêu đề CV"
         );
     }
 

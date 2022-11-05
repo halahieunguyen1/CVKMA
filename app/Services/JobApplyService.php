@@ -75,9 +75,9 @@ class JobApplyService
         $apply = $query->first();
         if ($apply) return true;
         $options['cv_version_id'] = $cv->cv_version_id;
-        $options['fullname'] = $cv->data->profile->fullname;
-        $options['email'] = $cv->data->profile->email;
-        $options['phone'] = $cv->data->profile->phone;
+        $options['fullname'] = $cv->data['profile']['fullname'];
+        $options['email'] = $cv->data['profile']['email'];
+        $options['phone'] = $cv->data['profile']['phone'];
         return $this->jobApplyRepo->create($options);
    }
 }
