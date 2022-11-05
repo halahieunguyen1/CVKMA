@@ -1239,3 +1239,61 @@ select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `qu
 select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97705)
 
 
+/api/auth/login
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/get-all
+select count(*) as aggregate from `jobs` where `publish_from` <= 2022-11-05 09:04:46 and `publish_to` >= 2022-11-05 09:04:46 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2022-11-05 09:04:46 and `publish_to` >= 2022-11-05 09:04:46 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/favorite/667360
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `jobs` where `jobs`.`id` = 667360 limit 1
+select * from `job_favorites` where (`job_id` = 667360 and `user_uuid` = 633c5be56132ba4f34e53a10) limit 1
+insert into `job_favorites` (`job_id`, `user_uuid`, `updated_at`, `created_at`) values (667360, 633c5be56132ba4f34e53a10, 2022-11-05 09:04:59, 2022-11-05 09:04:59)
+
+
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+
+
+/api/job/get-job-favorite
+/api/job/get-job-favorite
+/api/job/get-job-favorite
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `job_id` from `job_favorites` where `user_uuid` = 633c5be56132ba4f34e53a10
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `id` in (667335, 667360)
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (97704, 97705)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737623 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35425)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35426)
+select * from `cv_versions` where (`hash_all` = Ëô<VîKJ˜hƒ/½ä and `data_cv_id` = 5737623) limit 1
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737623 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35425)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35426)
+select * from `cv_versions` where (`hash_all` = XŒÓV%ìÙP¥åáY´Y and `data_cv_id` = 5737623) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737623 and `hash` = ØF•£Ý8Ù.–E7iõO£µ) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737623, ØF•£Ý8Ù.–E7iõO£µ, {"profile":{"email":"hieunv@topcv","address":"T\u1eeb S\u01a1n- B\u1eafc Ninha","fullname":"Nguy\u1ec5n V\u0103n Hi\u1ebfu","phone":"0368505826"},"global":"L\u1eadp tr\u00ecnh vi\u00ean PHP1","education_meta":"H\u1ecdc v\u1ea5n","education":[{"start":"2020","end":"nay","description":"H\u1ecdc 3 n\u0103m t\u1ea1i H\u1ecdc vi\u1ec7n k\u0129 thu\u1eadt M\u1eadt M\u00e3","school":"H\u1ecdc vi\u1ec7n K\u0129 Thu\u1eadt M\u1eadt M\u00e3","majors":"C\u00f4ng ngh\u1ec7 th\u00f4ng tin"}],"experience_meta":"Kinh nghi\u1ec7m l\u00e0m vi\u1ec7c","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Ph\u1ea7n th\u01b0\u1edfng","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2022-11-05 09:08:33, 2022-11-05 09:08:33)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737623, , XŒÓV%ìÙP¥åáY´Y, 35441, , normal, normal, roboto, en, 2022-11-05 09:08:33, 2022-11-05 09:08:33)
+update `data_cvs` set `cv_version_id` = 35438, `data_cvs`.`updated_at` = 2022-11-05 09:08:33 where `data_cv_id` = 5737623
+
+
+/api/cv/view-by-id/5737623
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737623 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35438)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35441)
+
+

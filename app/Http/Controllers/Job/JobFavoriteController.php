@@ -48,7 +48,7 @@ class JobFavoriteController extends Controller
     public function getFavorite()
     {
         $jobIds = JobFavorite::where('user_uuid', Auth::id())->pluck('job_id');
-        $jobs = Job::where('id', $jobIds)
+        $jobs = Job::whereIn('id', $jobIds)
         ->select('id', 'title', 'salary_from', 'salary_to', 'salary_type', 'deadline', 'quantity', 'position_id', 'company_id', 'description')
         ->with([
             'company' => function ($q) {
