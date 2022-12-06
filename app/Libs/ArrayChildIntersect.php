@@ -4,6 +4,13 @@ namespace App\Libs;
 
 class ArrayChildIntersect
 {
+
+    public static function convertStringToArray(string $text) {
+        $regex = '/\s|[a-zA-Z0-9%s\pL]+[a-zA-Z0-9\pL]|[^\s]/mu';
+        preg_match_all($regex, $text, $array, PREG_SPLIT_NO_EMPTY);
+        return $array[0];
+    }
+
     public static function intersect($arrayOne, $arrayTwo) {
         $countOne = count($arrayOne);
         $countTwo = count($arrayTwo);
@@ -22,14 +29,14 @@ class ArrayChildIntersect
                     $intersect[$key1 + 1][$key2 + 1] = [
                         'length' => max($intersect[$key1][$key2 + 1]['length'], $intersect[$key1 + 1][$key2]['length']),
                         'value' => ($intersect[$key1][$key2 + 1]['length'] == max($intersect[$key1][$key2 + 1]['length'], $intersect[$key1 + 1][$key2]['length'])) ? $intersect[$key1][$key2 + 1]['value'] : $intersect[$key1 + 1][$key2]['value'],
-                    ];  
+                    ];
                 }
             }
         }
         return $intersect[$countOne][$countTwo];
     }
 
-    public static function intersect1($arrayParent, $arrayIntersect, $key1 = 'delete') {
+    public static function intersect1($arrayParent, $arrayIntersect, $action = 'delete') {
         $index = 0;
         $start = 0;
         $end = 0;
@@ -40,7 +47,7 @@ class ArrayChildIntersect
         if (!count($arrayIntersect)) {
             return [
                 [
-                    'delete' => [
+                    $action => [
                         0, count($arrayParent)- 1,
                     ]
                 ]
@@ -50,12 +57,11 @@ class ArrayChildIntersect
         if ($arrayParent[0] == $arrayIntersect) {
             $flag = 'replace';
         } else {
-            $flag = $key1;
+            $flag = $action;
         }
         $countIntersect = count($arrayIntersect);
         $result = [
         ];
-        dump(count($arrayParent));
         foreach ($arrayParent as $key => $value) {
             if ($value == ($arrayIntersect[$index] ?? null)) {
                 $index++;
@@ -65,7 +71,7 @@ class ArrayChildIntersect
                 if ($flag != 'replace') {
                     $end = $key - 1;
                     $result[] = [
-                        $key1 => [$start, $end],
+                        $action => [$start, $end],
                     ];
                     $start = $key;
                     $flag = 'replace';
@@ -77,7 +83,7 @@ class ArrayChildIntersect
                         'replace' => [$start, $end],
                     ];
                     $start = $key;
-                    $flag = $key1;
+                    $flag = $action;
                 }
             }
         }
@@ -88,10 +94,31 @@ class ArrayChildIntersect
             ];
         } else {
             $result[] = [
-                $key1 => [$start, $end],
+                $action => [$start, $end],
             ];
         }
-        
-        dd($result);
+
+        return self::highlightText($arrayParent, $result, $action);
+    }
+
+    public static function highlightText($arrayText, $operations, $classCss = 'delete')
+    {
+        $result = '';
+        foreach ($operations as $value) {
+            if (isset($value['replace'])) {
+                $offset = $value['replace'];
+                if ($offset[1] > 0) {
+                    $result .= implode(' ', array_slice($arrayText, $offset[0], $offset[1]- $offset[0] + 1)) . ' ';
+                }
+            }
+
+            if (isset($value[$classCss])) {
+                $offset = $value[$classCss];
+                if ($offset[1] > 0) {
+                    $result .= "<span class='$classCss'>" .implode(' ', array_slice($arrayText, $offset[0], $offset[1]- $offset[0] + 1)) . '</span> ';
+                }
+            }
+        }
+        return  $result;
     }
 }

@@ -10,6 +10,7 @@ use App\Repositories\EmployerRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Illuminate\Support\Str;
 use GuzzleHttp\Client;
 class AuthService
 {
@@ -65,12 +66,13 @@ class AuthService
 
     public function createUserFromRequest(Request $request)
     {
-        $uuid = $this->createAccount($request->email, $request->password);
+        // $uuid = $this->createAccount($request->email, $request->password);
         $user = [];
-        $user['uuid'] = $uuid;
+        $user['uuid'] = Str::uuid()->toString();
         $user['email'] = $request->email;
         $user['phone'] = $request->phone;
         $user['first_name'] = $request->first_name;
+        $user['password'] = bcrypt($request->password);
         $user['last_name'] = $request->last_name;
         $user['address'] = $request->address;
         $user['dob'] = $request->dob;
@@ -81,8 +83,8 @@ class AuthService
 
     public function login(LoginRequest $request)
     {
-        $uuid = $this->loginAccount(email: $request->email, hash: $request->password);
-        $token = Auth::guard('api')->attempt(['uuid' => $uuid, 'password' => '123456'], true);
+        // $uuid = $this->loginAccount(email: $request->email, hash: $request->password);
+        $token = Auth::guard('api')->attempt(['email' => $request->email, 'password' => $request->password], true);
         $result = [];
         if ($token) {
             $result = [

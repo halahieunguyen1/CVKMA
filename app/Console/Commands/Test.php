@@ -28,8 +28,15 @@ class Test extends Command
      */
     public function handle()
     {
-        $intersect = ArrayChildIntersect::intersect([1, 2, 3, 5, 7, 8, 9, 1, 4], [4, 2, 3, 5, 8, 7, 8, 9, 1]);    
-        dump($intersect['value']);
-        $diffOne = ArrayChildIntersect::intersect1([1, 2, 3, 5, 7, 8, 9, 1, 4], $intersect['value']);
+        $string1 = "Xin Chào mọi người, tôi là Hiếu";
+        $string2 = "Xin Chào Ho người, tôi Hiếu là";
+        $array1 = ArrayChildIntersect::convertStringToArray($string1);
+        $array2 = ArrayChildIntersect::convertStringToArray($string2);
+
+        $intersect = ArrayChildIntersect::intersect($array1, $array2);
+        $diffOne = ArrayChildIntersect::intersect1($array1, $intersect['value']);
+        $diffTwo = ArrayChildIntersect::intersect1($array2, $intersect['value'], action: 'insert');
+        dump($diffOne);
+        dd($diffTwo);
     }
 }

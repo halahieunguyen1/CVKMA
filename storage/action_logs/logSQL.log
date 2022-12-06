@@ -1650,3 +1650,104 @@ select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `qu
 select `id`, `logo`, `name` from `companies` where `companies`.`id` in (82917, 96542, 97703, 97705, 97732, 97735, 97754, 98145, 98358)
 
 
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0368505826
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com1
+select count(*) as aggregate from `users` where `phone` = 0368505827
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (74141c22-0ecb-4056-9377-049d7a932738, vanhieubn1207@gmail.com1, 0368505827, Nguyễn Văn, Hiếu, Từ Sơn - Bắc Ninh, 2022-07-12, 0, 2022-12-06 07:44:39, 2022-12-06 07:44:39)
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com1 limit 1
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com1
+select count(*) as aggregate from `users` where `phone` = 0368505827
+
+
+/api/auth/login
+
+
+/api/auth/login
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com2
+select count(*) as aggregate from `users` where `phone` = 0368505828
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (ca23c72b-8f72-4e9e-9731-806da2703ebc, vanhieubn1207@gmail.com2, 0368505828, Nguyễn Văn, Hiếu, Từ Sơn - Bắc Ninh, 2022-07-12, 0, 2022-12-06 07:49:46, 2022-12-06 07:49:46)
+
+
+/api/auth/login
+/api/auth/login
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com2 limit 1
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com3 limit 1
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com3
+select count(*) as aggregate from `users` where `phone` = 0368505829
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (babe7144-a693-435e-811d-998d8029236e, vanhieubn1207@gmail.com3, 0368505829, Nguyễn Văn, y$UnydUWnh3iNQww0uT5S0G.ppjvrxX3T1nrfNGjAqvEr5tBiB3K1Sa, Hiếu, Từ Sơn - Bắc Ninh, 2022-07-12, 0, 2022-12-06 07:52:39, 2022-12-06 07:52:39)
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com3 limit 1
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/user/user-info
+
+
+/api/api/user/user-info
+
+
+/api/api/user/user-info
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
