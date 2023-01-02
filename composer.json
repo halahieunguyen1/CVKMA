@@ -11,10 +11,12 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "lucidarch/lucid": "^1.0",
         "php-open-source-saver/jwt-auth": "^1.4",
+        "predis/predis": "^2.0",
         "spatie/laravel-route-attributes": "^1.14",
-        "tymon/jwt-auth": "^1.0",
-        "maatwebsite/excel": "^3.0"
+        "maatwebsite/excel": "^3.0",
+        "tymon/jwt-auth": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

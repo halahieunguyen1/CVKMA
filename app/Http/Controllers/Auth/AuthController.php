@@ -11,12 +11,14 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\ChangePasswordRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Services\AuthService;
+use App\Services\CryptService;
 
 class AuthController extends Controller
 {
     //
     public function __construct(
-        public AuthService $authService
+        public AuthService $authService,
+        public CryptService $cryptService,
     )
     {
 
@@ -33,7 +35,11 @@ class AuthController extends Controller
     public function login(LoginRequest $request){
         $token = $this->authService->login($request);
         if ($token) {
-            return responseSuccess(data: $token);
+            $aesKey = $this->cryptService->storeKeyAES($token['token']);
+            $token['key'] = $aesKey;
+            return responseSuccess(
+                data: $token
+            );
         }
         return reponseError(message: MessageEnum::LOGIN_FAILD, statusCode: 404);
     }

@@ -9,8 +9,10 @@ use Illuminate\Http\Request;
 use App\Http\Requests\User\UpdateUserRequest;
 use App\Services\UserService;
 use App\Enums\UserEnum;
+use App\Features\User\GetUserHasDataCvFeature;
+use Lucid\Units\Controller as UnitsController;
 
-class UserController extends Controller
+class UserController extends UnitsController
 {
     public function __construct(
         public UserService $userService,
@@ -18,11 +20,16 @@ class UserController extends Controller
     {
         
     }
-    public function update(UpdateUserRequest $request) {
+    public function update(UpdateUserRequest $request)
+    {
         [$isUpdate, $user] = $this->userService->update($request);
         if ($isUpdate) {
             return responseSuccess(data: $user->formatInfo());
         }
         return reponseError(message: MessageEnum::UPDATE_FAILD, statusCode: 404);
+    }
+
+    public function testLucid() {
+        return view('omicall');
     }
 }

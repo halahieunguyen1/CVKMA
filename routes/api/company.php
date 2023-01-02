@@ -22,15 +22,19 @@ Route::group([
 ], function () {
 
     Route::get('get-all', 'getAll');
-    Route::get('get-top-list/', 'getTopList');
-    Route::get('get-top/{topListId}', 'getTop');
     Route::get('get-by-id/{id}', 'getById');
+    
+    Route::group([
+        'middleware' => [
+            // 'encode-response'
+        ]
+    ], function() {
+        Route::get('get-top-list/', 'getTopList');
+        Route::get('get-top/{topListId}', 'getTop');
+    });
 });
 Route::get('get-all-job/{id}', [JobController::class, 'getJobOfCompany']);
 
-Route::group(['middleware'=>['auth:api']], function() {
-    // Route::post('create', [CompanyController::class, 'create']);
-    // Route::post('update', [CompanyController::class, 'update ']);
-});
+
 
 

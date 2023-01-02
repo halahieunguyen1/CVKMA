@@ -18,7 +18,7 @@ class UpdateUserRequest extends BaseRequest
         return [
             'first_name' => 'max:30',
             'last_name' => 'max:30',
-            'phone' => ['regex:/^0[0-9]{9}$/', Rule::unique('users','phone')->ignore(Auth::id())],
+            'phone' => ['regex:/^0[0-9]{9}$/', Rule::unique('users','phone')->ignore(Auth::id(), 'uuid')],
             'address' => 'max:200',
             'dob' => ['date', 'before:today'],
             'exp' => 'numeric|max:127'

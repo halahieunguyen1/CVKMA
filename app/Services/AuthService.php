@@ -83,7 +83,6 @@ class AuthService
 
     public function login(LoginRequest $request)
     {
-        // $uuid = $this->loginAccount(email: $request->email, hash: $request->password);
         $token = Auth::guard('api')->attempt(['email' => $request->email, 'password' => $request->password], true);
         $result = [];
         if ($token) {

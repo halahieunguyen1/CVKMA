@@ -5,7 +5,11 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\User\UserController;
 
-Route::group(['middleware'=>['auth:api']], function() {
+Route::group(['middleware'=>[
+        'auth:api',
+        // 'encode-response',
+        // 'decode-request'
+    ]], function() {
     // Thông tin 1 User
     Route::get('user-info',function(Request $request) {
         return Auth::user()->formatInfo();
@@ -15,3 +19,8 @@ Route::group(['middleware'=>['auth:api']], function() {
     Route::post('update-user', [UserController::class, 'update']);
 });
 
+
+Route::group(['controller' => UserController::class], function() {
+    // Thông tin 1 User
+    Route::get('/lucid', 'testLucid');
+});

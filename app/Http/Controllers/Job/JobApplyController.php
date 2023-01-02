@@ -59,7 +59,7 @@ class JobApplyController extends Controller
             return responseSuccess();
         } catch (\Exception $e) {
             DB::rollback();
-            return reponseError(message: MessageEnum::BASE_FAILD, statusCode: 404);
+            return reponseError(message: $e->getMessage(), statusCode: 404);
         }
     }
 

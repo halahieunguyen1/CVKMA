@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DuyetTinTuDong;
+use App\Http\Controllers\OmiCallController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,4 @@ Route::get('test', function () {
 return;
 });
 Route::get('diff', [DuyetTinTuDong::class, 'diff']);
+Route::get('omicall', [OmiCallController::class, 'index']);
