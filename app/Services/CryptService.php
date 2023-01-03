@@ -17,7 +17,7 @@ class CryptService
    
     public function randomKeyAES()
     {
-        return 'base64:'.base64_encode(
+        return base64_encode(
             Encrypter::generateKey(config('app.cipher'))
         );
     }

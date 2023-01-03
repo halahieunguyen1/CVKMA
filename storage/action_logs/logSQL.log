@@ -1,0 +1,2058 @@
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 20:55:03 and `publish_to` >= 2023-01-02 20:55:03 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 20:55:03 and `publish_to` >= 2023-01-02 20:55:03 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 20:55:09 and `publish_to` >= 2023-01-02 20:55:09 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 20:55:09 and `publish_to` >= 2023-01-02 20:55:09 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/update-user
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+update `users` set `dob` = 2001-01-10, `users`.`updated_at` = 2023-01-02 20:55:38 where `uuid` = 633c5be56132ba4f34e53a10
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 20:55:59 and `publish_to` >= 2023-01-02 20:55:59 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 20:55:59 and `publish_to` >= 2023-01-02 20:55:59 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 20:56:18 and `publish_to` >= 2023-01-02 20:56:18 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 20:56:18 and `publish_to` >= 2023-01-02 20:56:18 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 20:56:40 and `publish_to` >= 2023-01-02 20:56:40 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 20:56:40 and `publish_to` >= 2023-01-02 20:56:40 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 20:57:01 and `publish_to` >= 2023-01-02 20:57:01 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 20:57:01 and `publish_to` >= 2023-01-02 20:57:01 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:01:23 and `publish_to` >= 2023-01-02 21:01:23 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:01:23 and `publish_to` >= 2023-01-02 21:01:23 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:01:42 and `publish_to` >= 2023-01-02 21:01:42 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:01:42 and `publish_to` >= 2023-01-02 21:01:42 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:03:01 and `publish_to` >= 2023-01-02 21:03:01 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:03:01 and `publish_to` >= 2023-01-02 21:03:01 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:04:47 and `publish_to` >= 2023-01-02 21:04:47 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:04:47 and `publish_to` >= 2023-01-02 21:04:47 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:05:05 and `publish_to` >= 2023-01-02 21:05:05 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:05:05 and `publish_to` >= 2023-01-02 21:05:05 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:06:08 and `publish_to` >= 2023-01-02 21:06:08 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:06:08 and `publish_to` >= 2023-01-02 21:06:08 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:07:18 and `publish_to` >= 2023-01-02 21:07:18 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:07:18 and `publish_to` >= 2023-01-02 21:07:18 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:07:59 and `publish_to` >= 2023-01-02 21:07:59 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:07:59 and `publish_to` >= 2023-01-02 21:07:59 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:08:48 and `publish_to` >= 2023-01-02 21:08:48 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:08:48 and `publish_to` >= 2023-01-02 21:08:48 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:09:43 and `publish_to` >= 2023-01-02 21:09:43 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:09:43 and `publish_to` >= 2023-01-02 21:09:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:36:22 and `publish_to` >= 2023-01-02 21:36:22 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:36:22 and `publish_to` >= 2023-01-02 21:36:22 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:38:00 and `publish_to` >= 2023-01-02 21:38:00 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:38:00 and `publish_to` >= 2023-01-02 21:38:00 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:38:15 and `publish_to` >= 2023-01-02 21:38:15 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:38:15 and `publish_to` >= 2023-01-02 21:38:15 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:47:04 and `publish_to` >= 2023-01-02 21:47:04 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:47:04 and `publish_to` >= 2023-01-02 21:47:04 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:47:23 and `publish_to` >= 2023-01-02 21:47:23 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:47:23 and `publish_to` >= 2023-01-02 21:47:23 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:48:36 and `publish_to` >= 2023-01-02 21:48:36 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:48:36 and `publish_to` >= 2023-01-02 21:48:36 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:49:08 and `publish_to` >= 2023-01-02 21:49:08 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:49:08 and `publish_to` >= 2023-01-02 21:49:08 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:49:28 and `publish_to` >= 2023-01-02 21:49:28 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:49:28 and `publish_to` >= 2023-01-02 21:49:28 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:50:17 and `publish_to` >= 2023-01-02 21:50:17 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:50:17 and `publish_to` >= 2023-01-02 21:50:17 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 21:50:50 and `publish_to` >= 2023-01-02 21:50:50 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 21:50:50 and `publish_to` >= 2023-01-02 21:50:50 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:09:28 and `publish_to` >= 2023-01-02 22:09:28 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:09:28 and `publish_to` >= 2023-01-02 22:09:28 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:19:36 and `publish_to` >= 2023-01-02 22:19:36 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:19:36 and `publish_to` >= 2023-01-02 22:19:36 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:21:04 and `publish_to` >= 2023-01-02 22:21:04 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:21:04 and `publish_to` >= 2023-01-02 22:21:04 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:21:21 and `publish_to` >= 2023-01-02 22:21:21 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:21:21 and `publish_to` >= 2023-01-02 22:21:21 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:22:21 and `publish_to` >= 2023-01-02 22:22:21 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:22:21 and `publish_to` >= 2023-01-02 22:22:21 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:22:39 and `publish_to` >= 2023-01-02 22:22:39 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:22:39 and `publish_to` >= 2023-01-02 22:22:39 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:24:30 and `publish_to` >= 2023-01-02 22:24:30 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:24:30 and `publish_to` >= 2023-01-02 22:24:30 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:24:36 and `publish_to` >= 2023-01-02 22:24:36 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:24:36 and `publish_to` >= 2023-01-02 22:24:36 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:24:57 and `publish_to` >= 2023-01-02 22:24:57 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:24:57 and `publish_to` >= 2023-01-02 22:24:57 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:36:24 and `publish_to` >= 2023-01-02 22:36:24 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:36:24 and `publish_to` >= 2023-01-02 22:36:24 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:36:43 and `publish_to` >= 2023-01-02 22:36:43 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:36:43 and `publish_to` >= 2023-01-02 22:36:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:42:24 and `publish_to` >= 2023-01-02 22:42:24 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:42:24 and `publish_to` >= 2023-01-02 22:42:24 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:43:15 and `publish_to` >= 2023-01-02 22:43:15 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:43:15 and `publish_to` >= 2023-01-02 22:43:15 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:44:20 and `publish_to` >= 2023-01-02 22:44:20 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:44:20 and `publish_to` >= 2023-01-02 22:44:20 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:44:36 and `publish_to` >= 2023-01-02 22:44:36 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:44:36 and `publish_to` >= 2023-01-02 22:44:36 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:45:15 and `publish_to` >= 2023-01-02 22:45:15 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:45:15 and `publish_to` >= 2023-01-02 22:45:15 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:45:53 and `publish_to` >= 2023-01-02 22:45:53 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:45:53 and `publish_to` >= 2023-01-02 22:45:53 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:46:54 and `publish_to` >= 2023-01-02 22:46:54 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:46:54 and `publish_to` >= 2023-01-02 22:46:54 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:47:43 and `publish_to` >= 2023-01-02 22:47:43 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:47:43 and `publish_to` >= 2023-01-02 22:47:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:47:59 and `publish_to` >= 2023-01-02 22:47:59 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:47:59 and `publish_to` >= 2023-01-02 22:47:59 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:48:24 and `publish_to` >= 2023-01-02 22:48:24 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:48:24 and `publish_to` >= 2023-01-02 22:48:24 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:48:45 and `publish_to` >= 2023-01-02 22:48:45 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:48:45 and `publish_to` >= 2023-01-02 22:48:45 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:49:41 and `publish_to` >= 2023-01-02 22:49:41 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:49:41 and `publish_to` >= 2023-01-02 22:49:41 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:49:49 and `publish_to` >= 2023-01-02 22:49:49 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:49:49 and `publish_to` >= 2023-01-02 22:49:49 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:51:21 and `publish_to` >= 2023-01-02 22:51:21 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:51:21 and `publish_to` >= 2023-01-02 22:51:21 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:51:43 and `publish_to` >= 2023-01-02 22:51:43 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:51:43 and `publish_to` >= 2023-01-02 22:51:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:52:46 and `publish_to` >= 2023-01-02 22:52:46 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:52:46 and `publish_to` >= 2023-01-02 22:52:46 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:54:26 and `publish_to` >= 2023-01-02 22:54:26 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:54:26 and `publish_to` >= 2023-01-02 22:54:26 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:54:59 and `publish_to` >= 2023-01-02 22:54:59 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:54:59 and `publish_to` >= 2023-01-02 22:54:59 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:56:01 and `publish_to` >= 2023-01-02 22:56:01 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:56:01 and `publish_to` >= 2023-01-02 22:56:01 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:57:01 and `publish_to` >= 2023-01-02 22:57:01 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:57:01 and `publish_to` >= 2023-01-02 22:57:01 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:58:08 and `publish_to` >= 2023-01-02 22:58:08 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:58:08 and `publish_to` >= 2023-01-02 22:58:08 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 22:59:49 and `publish_to` >= 2023-01-02 22:59:49 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 22:59:49 and `publish_to` >= 2023-01-02 22:59:49 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:00:24 and `publish_to` >= 2023-01-02 23:00:24 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:00:24 and `publish_to` >= 2023-01-02 23:00:24 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:04:55 and `publish_to` >= 2023-01-02 23:04:55 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:04:55 and `publish_to` >= 2023-01-02 23:04:55 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:05:10 and `publish_to` >= 2023-01-02 23:05:10 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:05:10 and `publish_to` >= 2023-01-02 23:05:10 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:08:01 and `publish_to` >= 2023-01-02 23:08:01 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:08:01 and `publish_to` >= 2023-01-02 23:08:01 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:08:43 and `publish_to` >= 2023-01-02 23:08:43 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:08:43 and `publish_to` >= 2023-01-02 23:08:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:10:16 and `publish_to` >= 2023-01-02 23:10:16 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:10:16 and `publish_to` >= 2023-01-02 23:10:16 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:10:34 and `publish_to` >= 2023-01-02 23:10:34 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:10:34 and `publish_to` >= 2023-01-02 23:10:34 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:11:16 and `publish_to` >= 2023-01-02 23:11:16 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:11:16 and `publish_to` >= 2023-01-02 23:11:16 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:11:44 and `publish_to` >= 2023-01-02 23:11:44 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:11:44 and `publish_to` >= 2023-01-02 23:11:44 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:12:04 and `publish_to` >= 2023-01-02 23:12:04 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:12:04 and `publish_to` >= 2023-01-02 23:12:04 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:13:23 and `publish_to` >= 2023-01-02 23:13:23 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:13:23 and `publish_to` >= 2023-01-02 23:13:23 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:14:02 and `publish_to` >= 2023-01-02 23:14:02 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:14:02 and `publish_to` >= 2023-01-02 23:14:02 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/user/user-info
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/company/get-all
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:38:29 and `publish_to` >= 2023-01-02 23:38:29 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:38:29 and `publish_to` >= 2023-01-02 23:38:29 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:38:47 and `publish_to` >= 2023-01-02 23:38:47 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:38:47 and `publish_to` >= 2023-01-02 23:38:47 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:40:05 and `publish_to` >= 2023-01-02 23:40:05 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:40:05 and `publish_to` >= 2023-01-02 23:40:05 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:40:19 and `publish_to` >= 2023-01-02 23:40:19 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:40:19 and `publish_to` >= 2023-01-02 23:40:19 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:40:57 and `publish_to` >= 2023-01-02 23:40:57 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:40:57 and `publish_to` >= 2023-01-02 23:40:57 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:42:21 and `publish_to` >= 2023-01-02 23:42:21 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:42:21 and `publish_to` >= 2023-01-02 23:42:21 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:42:38 and `publish_to` >= 2023-01-02 23:42:38 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:42:38 and `publish_to` >= 2023-01-02 23:42:38 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:43:34 and `publish_to` >= 2023-01-02 23:43:34 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:43:34 and `publish_to` >= 2023-01-02 23:43:34 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:44:26 and `publish_to` >= 2023-01-02 23:44:26 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:44:26 and `publish_to` >= 2023-01-02 23:44:26 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-02 23:44:44 and `publish_to` >= 2023-01-02 23:44:44 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-02 23:44:44 and `publish_to` >= 2023-01-02 23:44:44 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/auth/login
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/company/get-all
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/auth/login
+/api/auth/login
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/omicall
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/omicall
+
+
+/api/auth/login
+/api/auth/login
+/omicall
+
+

@@ -21,14 +21,14 @@ Route::group([
     'controller' => CompanyController::class, 
 ], function () {
 
-    Route::get('get-all', 'getAll');
     Route::get('get-by-id/{id}', 'getById');
     
     Route::group([
         'middleware' => [
-            // 'encode-response'
-        ]
-    ], function() {
+            'encode-response'
+            ]
+        ], function() {
+        Route::get('get-all', 'getAll');
         Route::get('get-top-list/', 'getTopList');
         Route::get('get-top/{topListId}', 'getTop');
     });
