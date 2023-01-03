@@ -6,7 +6,8 @@ use Closure;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Crypt;
+// use Illuminate\Support\Facades\Crypt;
+use App\Libs\Crypt;
 use Illuminate\Support\Facades\Redis;
 
 class DecodeRequest

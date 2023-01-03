@@ -3,18 +3,29 @@
 namespace App\Libs;
 
 use Illuminate\Contracts\Encryption\DecryptException;
+use Illuminate\Support\Str;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Support\Facades\Redis;
 
 class Crypt
 {
+    private static $cipher = 'AES-256-CBC';
+
+    private static $supportedCiphers = [
+        'aes-128-cbc' => ['size' => 16, 'aead' => false],
+        'aes-256-cbc' => ['size' => 32, 'aead' => false],
+        'aes-128-gcm' => ['size' => 16, 'aead' => true],
+        'aes-256-gcm' => ['size' => 32, 'aead' => true],
+    ];
+
     public static function encryptString($value, $serialize = false) {
-        $iv = random_bytes(openssl_cipher_iv_length(strtolower('AES-256-CBC')));
         $key = Redis::get(explode(' ', request()->server->get('HTTP_AUTHORIZATION'))[1]) ?? config('app.key');
+        $key = base64_decode(Str::after($key, 'base:64'));
+        $iv = random_bytes(openssl_cipher_iv_length(strtolower(self::$cipher)));
 
         $value = \openssl_encrypt(
             $serialize ? serialize($value) : $value,
-            strtolower('AES-256-CBC'), $key, 0, $iv, $tag
+            strtolower(self::$cipher), $key, 0, $iv, $tag
         );
 
         if ($value === false) {
@@ -24,19 +35,22 @@ class Crypt
         $iv = base64_encode($iv);
         $tag = base64_encode($tag ?? '');
 
-        $mac =  hash_hmac('sha256', $iv.$value, $key);
+        $mac = self::$supportedCiphers[strtolower(self::$cipher)]['aead']
+            ? '' // For AEAD-algoritms, the tag / MAC is returned by openssl_encrypt...
+            : hash_hmac('sha256', $iv.$value, $key);
+
         $json = json_encode(compact('iv', 'value', 'mac', 'tag'), JSON_UNESCAPED_SLASHES);
 
         if (json_last_error() !== JSON_ERROR_NONE) {
             throw new EncryptException('Could not encrypt the data.');
         }
-
         return base64_encode($json);
     }
 
     public static function decryptString($payload, $unserialize = false)
     {
         $key = Redis::get(explode(' ', request()->server->get('HTTP_AUTHORIZATION'))[1]) ?? config('app.key');
+        $key = base64_decode(Str::after($key, 'base:64'));
         $payload = json_decode(base64_decode($payload), true);
 
         // If the payload is not valid JSON or does not have the proper keys set we will
@@ -65,7 +79,6 @@ class Crypt
         if ($decrypted === false) {
             throw new DecryptException('Could not decrypt the data.');
         }
-
         return $unserialize ? unserialize($decrypted) : $decrypted;
     }
 
