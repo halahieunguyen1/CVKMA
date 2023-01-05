@@ -6,6 +6,7 @@ use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Support\Str;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Support\Facades\Redis;
+use Nullix\CryptoJsAes\CryptoJsAes;
 
 class Crypt
 {
@@ -47,6 +48,12 @@ class Crypt
         return base64_encode($json);
     }
 
+    public static function decryptString1($encrypted = '') {
+        $encrypted = '{"ct":"8cVCAPsZwO7vf2uDgKy6xQ==","iv":"81e3191483237d7885ccea8ae9aff3c5","s":"9e3a67903896646d"}';
+        $key = config('app.key');
+        $decrypted = CryptoJsAes::decrypt($encrypted, $key);
+        dd($decrypted);
+    }
     public static function decryptString($payload, $unserialize = false)
     {
         $key = Redis::get(explode(' ', request()->server->get('HTTP_AUTHORIZATION'))[1]) ?? config('app.key');

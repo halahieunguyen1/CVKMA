@@ -66,5 +66,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'encode-response' => \App\Http\Middleware\EncodeResponse::class,
         'decode-request' => \App\Http\Middleware\DecodeRequest::class,
+        'lock-email-user' => \App\Http\Middleware\CacheLockRegister::class,
     ];
 }

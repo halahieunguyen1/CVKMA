@@ -62,4 +62,19 @@ class JobController extends Controller
         return responseSuccess(data: $jobs);
     }
 
+    public function getJobAdvanced(Request $request)
+    {
+        $query = $this->jobService->getModel();
+        $countApply = $request->input('count_apply', null);
+        if ($countApply) {
+            // $query->whereHas('cvApplies', fn ($q) => $q->havingRaw("count(*) > $countApply"))
+            // ->withCount('cvApplies');
+            $query->whereHas('cvApplies', fn ($q) => $q->havingRaw("count(*) > ?", [$countApply]))
+            ->withCount('cvApplies');
+        }
+        $jobs = $this->jobService->get($query, $request);
+
+        return responseSuccess(data: $jobs);
+    }
+
 }

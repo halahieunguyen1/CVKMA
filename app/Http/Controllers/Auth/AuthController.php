@@ -25,6 +25,7 @@ class AuthController extends Controller
     }
 
     public function register(RegisterRequest $request){
+        sleep(10);
         $person = $this->authService->create($request);
         if ($person) {
             return responseSuccess();

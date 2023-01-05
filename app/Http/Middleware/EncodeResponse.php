@@ -5,7 +5,6 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Http\Request;
-// use Illuminate\Support\Facades\Crypt;
 use App\Libs\Crypt;
 use Illuminate\Support\Facades\Redis;
 

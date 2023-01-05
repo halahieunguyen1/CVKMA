@@ -33,7 +33,7 @@ class Job extends Model
 
     public function cvApplies()
     {
-        return $this->hasMany('App\Models\CvApply', 'job_id', 'id');
+        return $this->hasMany('App\Models\Job\JobCvApply', 'job_id', 'id');
     }
 
     public function fields()

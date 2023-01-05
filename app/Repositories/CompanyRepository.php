@@ -22,8 +22,5 @@ class CompanyRepository extends BaseRepository
         if ($request->title) {
             $query->where('title', 'like', "%$request->title%");
         }
-
     }
-
-   
 }

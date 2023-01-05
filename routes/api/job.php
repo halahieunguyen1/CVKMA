@@ -27,6 +27,7 @@ Route::group([
     Route::get('job-internship', 'get');
     Route::get('job-high-salary', 'get');
     Route::get('get-by-id/{id}', 'getById');
+    Route::get('job-advanced', 'getJobAdvanced');
     
     Route::group(['middleware'=>['auth:api']], function() {
         // Route::post('create', 'create);

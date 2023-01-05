@@ -17,7 +17,7 @@ use App\Http\Controllers\Auth\AuthController;
 */
 // Auth::routes(['verify' => true]);
 
-Route::post('register', [AuthController::class, 'register']);
+Route::post('register', [AuthController::class, 'register'])->middleware('lock-email-user');
 Route::post('login', [AuthController::class, 'login']);
 Route::group(['middleware'=>['auth:api']], function() {
     Route::post('change-password', [AuthController::class, 'changePassword']);

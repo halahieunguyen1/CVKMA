@@ -104,4 +104,9 @@ class User extends Authenticatable  implements JWTSubject, MustVerifyEmail
         }
         return $this->attributes;
     }
+
+    public function cvApplies()
+    {
+        return $this->hasMany('App\Models\Job\JobCvApply', 'user_uuid', 'uuid');
+    }
 }

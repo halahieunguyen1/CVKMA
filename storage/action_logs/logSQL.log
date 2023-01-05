@@ -2056,3 +2056,2114 @@ select * from `companies` order by `id` asc limit 10 offset 0
 /omicall
 
 
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-04 06:52:43 and `publish_to` >= 2023-01-04 06:52:43 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-04 06:52:43 and `publish_to` >= 2023-01-04 06:52:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-04 07:09:35 and `publish_to` >= 2023-01-04 07:09:35 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-04 07:09:35 and `publish_to` >= 2023-01-04 07:09:35 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/api/company/get-all
+select count(*) as aggregate from `companies`
+select * from `companies` order by `id` asc limit 10 offset 0
+
+
+/
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/dist/cryptojs-aes.min.js
+
+
+/dist/cryptojs-aes-format.js
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+/omicall
+/omicall
+
+
+/omicall
+
+
+/omicall
+/omicall
+
+
+/omicall
+
+
+/omicall
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/omicall
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:15:15 and `publish_to` >= 2023-01-05 00:15:15 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:15:15 and `publish_to` >= 2023-01-05 00:15:15 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/auth/login
+select * from `users` where `email` = vanhieubn1207@gmail.com limit 1
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:15:24 and `publish_to` >= 2023-01-05 00:15:24 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:15:24 and `publish_to` >= 2023-01-05 00:15:24 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:17:19 and `publish_to` >= 2023-01-05 00:17:19 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:17:19 and `publish_to` >= 2023-01-05 00:17:19 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:19:37 and `publish_to` >= 2023-01-05 00:19:37 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:19:37 and `publish_to` >= 2023-01-05 00:19:37 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35386)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35386)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:21:31 and `publish_to` >= 2023-01-05 00:21:31 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:21:31 and `publish_to` >= 2023-01-05 00:21:31 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:22:37 and `publish_to` >= 2023-01-05 00:22:37 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:22:37 and `publish_to` >= 2023-01-05 00:22:37 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35386)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35386)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:23:51 and `publish_to` >= 2023-01-05 00:23:51 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:23:51 and `publish_to` >= 2023-01-05 00:23:51 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35386)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35386)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35386)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35386)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35386)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35386)
+select * from `cv_versions` where (`hash_all` = wôJß4ÖÎ\ã‡Óûœ and `data_cv_id` = 5737592) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737592 and `hash` = 3∏ù ~ãÒ"‰è+ë◊sÃ) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737592, 3∏ù ~ãÒ"‰è+ë◊sÃ, {"profile":{"email":"vanhieubn1207@gmail.com","address":"T\u00e2n Tri\u1ec1u Thanh Tr\u00ec H\u00e0 N\u1ed9i","fullname":"Hi\u1ebfu L\u1ee3n 1","phone":"0988888888"},"global":"Senior Web Fullstack","education_meta":"H\u1ecdc V\u1ea5n","education":[],"experience_meta":"Kinh nghi\u1ec7m","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Th\u00e0nh t\u00edch","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2023-01-05 00:24:10, 2023-01-05 00:24:10)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737592, , wôJß4ÖÎ\ã‡Óûœ, 35387, , normal, normal, roboto, en, 2023-01-05 00:24:10, 2023-01-05 00:24:10)
+update `data_cvs` set `cv_version_id` = 35387, `data_cvs`.`updated_at` = 2023-01-05 00:24:10 where `data_cv_id` = 5737592
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:24:25 and `publish_to` >= 2023-01-05 00:24:25 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:24:25 and `publish_to` >= 2023-01-05 00:24:25 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:26:31 and `publish_to` >= 2023-01-05 00:26:31 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:26:31 and `publish_to` >= 2023-01-05 00:26:31 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:27:06 and `publish_to` >= 2023-01-05 00:27:06 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:27:06 and `publish_to` >= 2023-01-05 00:27:06 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:28:15 and `publish_to` >= 2023-01-05 00:28:15 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:28:15 and `publish_to` >= 2023-01-05 00:28:15 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35387)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35387)
+select * from `cv_versions` where (`hash_all` = æWæ^\Îî˘çUàÊj and `data_cv_id` = 5737592) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737592 and `hash` = ÀT@‡◊Í[l0íXú}p) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737592, ÀT@‡◊Í[l0íXú}p, {"profile":{"email":"vanhieubn1207@gmail.com","address":"T\u00e2n Tri\u1ec1u Thanh Tr\u00ec H\u00e0 N\u1ed9i","fullname":"Hi\u1ebfu L\u1ee3n 1","phone":"0988888887"},"global":"Senior Web Fullstack","education_meta":"H\u1ecdc V\u1ea5n","education":[],"experience_meta":"Kinh nghi\u1ec7m","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Th\u00e0nh t\u00edch","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2023-01-05 00:28:29, 2023-01-05 00:28:29)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737592, , æWæ^\Îî˘çUàÊj, 35388, , normal, normal, roboto, en, 2023-01-05 00:28:29, 2023-01-05 00:28:29)
+update `data_cvs` set `cv_version_id` = 35388, `data_cvs`.`updated_at` = 2023-01-05 00:28:29 where `data_cv_id` = 5737592
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:29:23 and `publish_to` >= 2023-01-05 00:29:23 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:29:23 and `publish_to` >= 2023-01-05 00:29:23 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:32:07 and `publish_to` >= 2023-01-05 00:32:07 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:32:07 and `publish_to` >= 2023-01-05 00:32:07 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:32:39 and `publish_to` >= 2023-01-05 00:32:39 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:32:39 and `publish_to` >= 2023-01-05 00:32:39 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35388)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35388)
+select * from `cv_versions` where (`hash_all` = á˚„'ª≠P¶ï˚Ç6 and `data_cv_id` = 5737592) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737592 and `hash` = ÄÕﬁz/t&+2¡⁄‰w1u) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737592, ÄÕﬁz/t&+2¡⁄‰w1u, {"profile":{"email":"vanhieubn1207@gmail.com","address":"T\u00e2n Tri\u1ec1u Thanh Tr\u00ec H\u00e0 N\u1ed9i","fullname":"Hi\u1ebfu L\u1ee3n 11","phone":"0988888887"},"global":"Senior Web Fullstack","education_meta":"H\u1ecdc V\u1ea5n","education":[],"experience_meta":"Kinh nghi\u1ec7m","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Th\u00e0nh t\u00edch","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2023-01-05 00:32:58, 2023-01-05 00:32:58)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737592, , á˚„'ª≠P¶ï˚Ç6, 35389, , normal, normal, roboto, en, 2023-01-05 00:32:58, 2023-01-05 00:32:58)
+update `data_cvs` set `cv_version_id` = 35389, `data_cvs`.`updated_at` = 2023-01-05 00:32:58 where `data_cv_id` = 5737592
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:33:49 and `publish_to` >= 2023-01-05 00:33:49 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:33:49 and `publish_to` >= 2023-01-05 00:33:49 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:36:45 and `publish_to` >= 2023-01-05 00:36:45 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:36:45 and `publish_to` >= 2023-01-05 00:36:45 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:37:12 and `publish_to` >= 2023-01-05 00:37:12 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:37:12 and `publish_to` >= 2023-01-05 00:37:12 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:38:23 and `publish_to` >= 2023-01-05 00:38:23 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:38:23 and `publish_to` >= 2023-01-05 00:38:23 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:38:56 and `publish_to` >= 2023-01-05 00:38:56 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:38:56 and `publish_to` >= 2023-01-05 00:38:56 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:43:47 and `publish_to` >= 2023-01-05 00:43:47 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:43:47 and `publish_to` >= 2023-01-05 00:43:47 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:46:09 and `publish_to` >= 2023-01-05 00:46:09 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:46:09 and `publish_to` >= 2023-01-05 00:46:09 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:47:22 and `publish_to` >= 2023-01-05 00:47:22 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:47:22 and `publish_to` >= 2023-01-05 00:47:22 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35389)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35389)
+select * from `cv_versions` where (`hash_all` = u…p•köêﬂ£]åz5  and `data_cv_id` = 5737592) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737592 and `hash` = uX
+ñ™‘¢ån›ÇWí) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737592, uX
+ñ™‘¢ån›ÇWí, {"profile":{"email":"vanhieubn1207@gmail.com","address":"T\u00e2n Tri\u1ec1u Thanh Tr\u00ec H\u00e0 N\u1ed9i","fullname":"Hi\u1ebfu L\u1ee3n 111","phone":"0988888887"},"global":"Senior Web Fullstack","education_meta":"H\u1ecdc V\u1ea5n","education":[],"experience_meta":"Kinh nghi\u1ec7m","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Th\u00e0nh t\u00edch","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2023-01-05 00:47:38, 2023-01-05 00:47:38)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737592, , u…p•köêﬂ£]åz5 , 35390, , normal, normal, roboto, en, 2023-01-05 00:47:38, 2023-01-05 00:47:38)
+update `data_cvs` set `cv_version_id` = 35390, `data_cvs`.`updated_at` = 2023-01-05 00:47:38 where `data_cv_id` = 5737592
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+
+
+/api/job/job-high-salary
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 00:50:02 and `publish_to` >= 2023-01-05 00:50:02 and `is_publish` = 1
+select `id`, `title`, `salary_from`, `salary_to`, `salary_type`, `deadline`, `quantity`, `position_id`, `company_id`, `description` from `jobs` where `publish_from` <= 2023-01-05 00:50:02 and `publish_to` >= 2023-01-05 00:50:02 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `id`, `logo`, `name` from `companies` where `companies`.`id` in (70043, 84968, 95093, 97703, 97704, 97705, 97710, 97720, 97724)
+
+
+/api/cv/get-all
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select `cv_version_id`, `data_cv_id`, `user_uuid` from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+
+
+/api/cv/view-by-id/5737592
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35390)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35390)
+select * from `cv_versions` where (`hash_all` = √&˜·B«˝QV't¯ and `data_cv_id` = 5737592) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737592 and `hash` = >ãïãÖ⁄Kîî'Ò2Iê´¶) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737592, >ãïãÖ⁄Kîî'Ò2Iê´¶, {"profile":{"email":"vanhieubn1207@gmail.com","address":"T\u00e2n Tri\u1ec1u Thanh Tr\u00ec H\u00e0 N\u1ed9i","fullname":"Hi\u1ebfu L\u1ee3n 111","phone":"0988888887"},"global":"Senior Web Fullstack1","education_meta":"H\u1ecdc V\u1ea5n","education":[],"experience_meta":"Kinh nghi\u1ec7m","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Th\u00e0nh t\u00edch","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2023-01-05 00:50:14, 2023-01-05 00:50:14)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737592, , √&˜·B«˝QV't¯, 35391, , normal, normal, roboto, en, 2023-01-05 00:50:14, 2023-01-05 00:50:14)
+update `data_cvs` set `cv_version_id` = 35391, `data_cvs`.`updated_at` = 2023-01-05 00:50:14 where `data_cv_id` = 5737592
+
+
+/api/cv/update
+select * from `users` where `uuid` = 633c5be56132ba4f34e53a10 limit 1
+select * from `data_cvs` where `user_uuid` = 633c5be56132ba4f34e53a10 and `data_cv_id` = 5737592 limit 1
+select * from `cv_versions` where `cv_versions`.`id` in (35391)
+select * from `data_cv_versions` where `data_cv_versions`.`id` in (35391)
+select * from `cv_versions` where (`hash_all` = —Ûó–pÎak≠‹Ë!q‹ and `data_cv_id` = 5737592) limit 1
+select * from `data_cv_versions` where (`data_cv_id` = 5737592 and `hash` = ≈ïÂ>§R.¿≈R¨÷{ÒW) limit 1
+insert into `data_cv_versions` (`data_cv_id`, `hash`, `data`, `updated_at`, `created_at`) values (5737592, ≈ïÂ>§R.¿≈R¨÷{ÒW, {"profile":{"email":"vanhieubn1207@gmail.com","address":"T\u00e2n Tri\u1ec1u Thanh Tr\u00ec H\u00e0 N\u1ed9i","fullname":"Hi\u1ebfu L\u1ee3n 1115","phone":"0988888887"},"global":"Senior Web Fullstack1","education_meta":"H\u1ecdc V\u1ea5n","education":[],"experience_meta":"Kinh nghi\u1ec7m","experience":[],"activity_meta":"Ho\u1ea1t \u0111\u1ed9ng","activity":[],"certification_meta":"Ch\u1ee9ng ch\u1ec9","certification":[],"award_meta":"Th\u00e0nh t\u00edch","award":[],"skillrate_meta":"K\u0129 n\u0103ng","skillrate":[]}, 2023-01-05 00:50:22, 2023-01-05 00:50:22)
+insert into `cv_versions` (`data_cv_id`, `template_cv_id`, `hash_all`, `data_cv_version_id`, `color_scheme`, `fontsize`, `spacing`, `font`, `lang`, `updated_at`, `created_at`) values (5737592, , —Ûó–pÎak≠‹Ë!q‹, 35392, , normal, normal, roboto, en, 2023-01-05 00:50:22, 2023-01-05 00:50:22)
+update `data_cvs` set `cv_version_id` = 35392, `data_cvs`.`updated_at` = 2023-01-05 00:50:22 where `data_cv_id` = 5737592
+
+
+/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where `publish_from` <= 2023-01-05 07:12:13 and `publish_to` >= 2023-01-05 07:12:13 and `is_publish` = 1
+select * from `jobs` where `publish_from` <= 2023-01-05 07:12:13 and `publish_to` >= 2023-01-05 07:12:13 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:13:43 and `publish_to` >= 2023-01-05 07:13:43 and `is_publish` = 1
+select * from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:13:43 and `publish_to` >= 2023-01-05 07:13:43 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:15:15 and `publish_to` >= 2023-01-05 07:15:15 and `is_publish` = 1
+select * from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:15:15 and `publish_to` >= 2023-01-05 07:15:15 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `job_id` from `job_cv_applies` where `job_cv_applies`.`job_id` in (667370, 667468, 667573, 667637, 667705, 667713, 667740, 667747, 667786, 667823)
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:15:33 and `publish_to` >= 2023-01-05 07:15:33 and `is_publish` = 1
+select * from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:15:33 and `publish_to` >= 2023-01-05 07:15:33 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select count(*), job_id from `job_cv_applies` where `job_cv_applies`.`job_id` in (667370, 667468, 667573, 667637, 667705, 667713, 667740, 667747, 667786, 667823)
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:16:00 and `publish_to` >= 2023-01-05 07:16:00 and `is_publish` = 1
+select * from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:16:00 and `publish_to` >= 2023-01-05 07:16:00 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `job_id`, count(*) from `job_cv_applies` where `job_cv_applies`.`job_id` in (667370, 667468, 667573, 667637, 667705, 667713, 667740, 667747, 667786, 667823)
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:16:10 and `publish_to` >= 2023-01-05 07:16:10 and `is_publish` = 1
+select * from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:16:10 and `publish_to` >= 2023-01-05 07:16:10 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+select `job_id` from `job_cv_applies` where `job_cv_applies`.`job_id` in (667370, 667468, 667573, 667637, 667705, 667713, 667740, 667747, 667786, 667823)
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:16:58 and `publish_to` >= 2023-01-05 07:16:58 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 5) and `publish_from` <= 2023-01-05 07:16:58 and `publish_to` >= 2023-01-05 07:16:58 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 1) and `publish_from` <= 2023-01-05 07:17:30 and `publish_to` >= 2023-01-05 07:17:30 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 1) and `publish_from` <= 2023-01-05 07:17:30 and `publish_to` >= 2023-01-05 07:17:30 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100) and `publish_from` <= 2023-01-05 07:17:41 and `publish_to` >= 2023-01-05 07:17:41 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100) and `publish_from` <= 2023-01-05 07:17:41 and `publish_to` >= 2023-01-05 07:17:41 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100) and `publish_from` <= 2023-01-05 07:27:01 and `publish_to` >= 2023-01-05 07:27:01 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100) and `publish_from` <= 2023-01-05 07:27:01 and `publish_to` >= 2023-01-05 07:27:01 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100) and `publish_from` <= 2023-01-05 07:27:56 and `publish_to` >= 2023-01-05 07:27:56 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100) and `publish_from` <= 2023-01-05 07:27:56 and `publish_to` >= 2023-01-05 07:27:56 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100 or 1 = 1) and `publish_from` <= 2023-01-05 07:30:30 and `publish_to` >= 2023-01-05 07:30:30 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100 or 1 = 1) and `publish_from` <= 2023-01-05 07:30:30 and `publish_to` >= 2023-01-05 07:30:30 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/job/job-advanced
+select count(*) as aggregate from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100 or 1 = 1) and `publish_from` <= 2023-01-05 07:30:54 and `publish_to` >= 2023-01-05 07:30:54 and `is_publish` = 1
+select `jobs`.*, (select count(*) from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id`) as `cv_applies_count` from `jobs` where exists (select * from `job_cv_applies` where `jobs`.`id` = `job_cv_applies`.`job_id` having count(*) > 100 or 1 = 1) and `publish_from` <= 2023-01-05 07:30:54 and `publish_to` >= 2023-01-05 07:30:54 and `is_publish` = 1 order by `id` asc limit 10 offset 0
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0368505827
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com1
+select count(*) as aggregate from `users` where `phone` = 0368505827
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = vanhieubn1207@gmail.com1
+select count(*) as aggregate from `users` where `phone` = 0368505828
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (596bba01-8a9e-485a-ad77-4d30411fc015, vanhieubn1207@gmail.com1, 0368505828, Nguy·ªÖn VƒÉn, y$wSJs9AFobdfLzRiSmlMwCOQOaR/whDLyD11mlYr/8qGcNMY6NyuVi, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 07:52:56, 2023-01-05 07:52:56)
+
+
+/
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1208@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0595747606
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (99b733e1-f226-43b8-87f1-2cd504e214ce, testvanhieubn1208@gmail.com, 0595747606, Nguy·ªÖn VƒÉn, y$jR/ms18TWoqVitn2abTc.e4xPQZyaeHr5PsUH98F.44hWO5Cbpt/K, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:01:43, 2023-01-05 08:01:43)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1208@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0978218321
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1208@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0251537768
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1208@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0239672274
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1208@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0174286256
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0642519086
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (ff252a5a-bb37-4132-ae0e-e57f067fc63f, testvanhieubn1209@gmail.com, 0642519086, Nguy·ªÖn VƒÉn, y$cgIJbw6Xf87hVizgIasdAO94pvlZPT1167GEnIHZkvQ4nKKwSzgGi, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:03:20, 2023-01-05 08:03:20)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0587727975
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0568094781
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0902995864
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0585990301
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0105658756
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0180458611
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0806876108
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0637547117
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0635964776
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0475008806
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0884699471
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1209@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0723656835
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0735820258
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (aa2ba5b9-c958-4970-b04c-20e013192bd1, testvanhieubn1210@gmail.com, 0735820258, Nguy·ªÖn VƒÉn, y$iHAyzO91QPKt/jF5osrfHeV0Th4xzbQY0JT618GipdMtp1kyOHvIa, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:03:36, 2023-01-05 08:03:36)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0477074129
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0427474279
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0624527177
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0705832523
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0539029043
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0157068905
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0674064377
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0504329893
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0225948590
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0996418680
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0971007269
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1210@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0463419304
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0237673191
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (947324e7-9a2e-4668-a5ef-debdbc517fe7, testvanhieubn1211@gmail.com, 0237673191, Nguy·ªÖn VƒÉn, y$C3c5OysziWa8ubPt6VIzwOjoAPdoEEixP/1pL2hXN9ubyxwzJQr3O, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:04:19, 2023-01-05 08:04:19)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0302330578
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0747508500
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0322291263
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0735834942
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0294831772
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0759851121
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0697848205
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0309007185
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0312778533
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0348780707
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0208428878
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0345649695
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `phone` = 0131924666
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (965d60dd-1784-4f28-ad32-0da719a3a7ac, testvanhieubn1211@gmail.com, 0131924666, Nguy·ªÖn VƒÉn, y$zoFxV15tG2YRj7XXLAnIt.m4.kAk.wN/QMPPFhHu205SSJH9OZZTO, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:04:58, 2023-01-05 08:04:58)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `phone` = 0685717927
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (97c91b2f-e423-464e-8fbf-325d1d242a13, testvanhieubn1211@gmail.com, 0685717927, Nguy·ªÖn VƒÉn, y$Le//V0PbcRWReMB0/FiRXeh4Kb/MRHI/gpMClF2DHHPrfbIMz.fw6, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:05:08, 2023-01-05 08:05:08)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `phone` = 0836243789
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (0aa9d5b2-f961-4b43-afe2-6746bbc8e2c8, testvanhieubn1211@gmail.com, 0836243789, Nguy·ªÖn VƒÉn, y$LCzHh6fw38SMOTCTVn/ch.4OUFHtWGkeN2rkzwtjg09ir7nthrl7K, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:05:10, 2023-01-05 08:05:10)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `phone` = 0144446508
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (c68d535a-e446-4a5b-87bc-cf4b7db1a1ad, testvanhieubn1211@gmail.com, 0144446508, Nguy·ªÖn VƒÉn, y$jK72roETG.dsX0ioXHom3../rxETiIjEVdzTo5Vnmp9KySZeHrSqC, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:05:12, 2023-01-05 08:05:12)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `phone` = 0697219956
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (d3fc4156-e9de-4935-881a-e6819599bd73, testvanhieubn1211@gmail.com, 0697219956, Nguy·ªÖn VƒÉn, y$G7idO8p6p.dKqUbboCokwuqB7Bye6VcLN93buRJLxWeztiIFvD3mi, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:05:22, 2023-01-05 08:05:22)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0739551396
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0499803040
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0337244448
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0791016968
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0482795635
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0725641571
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0100118324
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0379219781
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0178746773
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0588025588
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0383669330
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0344308431
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0942167494
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0396974610
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0184199226
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0201413182
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0895180227
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0294379986
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0541222488
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0979149761
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1211@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0676797476
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0247794432
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (9a8328e6-5e00-448b-ac28-772eecf3c760, testvanhieubn1212@gmail.com, 0247794432, Nguy·ªÖn VƒÉn, y$AkwN3JfC/XzPAEs8H.P.JunoxsG.NSSLRzpNwTqxlAVZQs3U9QhfS, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:06:08, 2023-01-05 08:06:08)
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0529369296
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0132207252
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0571031089
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0803158610
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0664819459
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0641415900
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0401409958
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0189431483
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0902671181
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0397856378
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0603953412
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0575133088
+
+
+/omicall
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0824367192
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0117758229
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0469345720
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0991550137
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0149725752
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0786728140
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0578089304
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0149898882
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0557508688
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0631502258
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0258004880
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0536732161
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1212@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0793555799
+
+
+/
+
+
+/omicall
+
+
+/omicall
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0681571928
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (b7a86bcb-4543-42eb-a816-ba483a409e78, testvanhieubn1232@gmail.com, 0681571928, Nguy·ªÖn VƒÉn, y$QxZNULYbglDLQOUOU2SDMuJkjgyU/tG9txXltwDd1L9EnV8EATNom, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:11:29, 2023-01-05 08:11:29)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0166239410
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (74f7c326-3e15-4a6c-a7a9-f2a645629b8f, testvanhieubn1232@gmail.com, 0166239410, Nguy·ªÖn VƒÉn, yjy2rLuQ.oGwWGRTDKDCexYWf/eCf2d5VLXWjfZJewTuZjqAljjq, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:11:29, 2023-01-05 08:11:29)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0810460875
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (731ea9fc-df5f-4f36-8336-94c51d9abc67, testvanhieubn1232@gmail.com, 0810460875, Nguy·ªÖn VƒÉn, y$gHxn28swoVoCs4Xx7U49rOQAorGZIH4thrON0ufawyAIVNnA/hfmK, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:11:29, 2023-01-05 08:11:29)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0541684914
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (f9c76775-851d-4ce7-9ba9-c1deeb94c061, testvanhieubn1232@gmail.com, 0541684914, Nguy·ªÖn VƒÉn, y$ezhUMP5SPpRw3IUzkvNF9ehUXWBVxAZz5uZOBvqf016znv5e2.DLi, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:11:29, 2023-01-05 08:11:29)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0195880519
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (e97fc03a-8d50-4257-9fbc-54a287dcd135, testvanhieubn1232@gmail.com, 0195880519, Nguy·ªÖn VƒÉn, y$qI.asowD11R7CqWiEUNee.EeEv2ovU2OIQGynElrcs35mHVyLxXmy, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:11:29, 2023-01-05 08:11:29)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0911096308
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (c02e8866-f846-4597-8dc1-46e4a34fad74, testvanhieubn1232@gmail.com, 0911096308, Nguy·ªÖn VƒÉn, y$vjeIRyHbnl5Evft887q90OwOh6LhP6E.kIUi6cNaqlCLTEMqYoTo2, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:11:29, 2023-01-05 08:11:29)
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0732057713
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0356565051
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0203647304
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+
+select count(*) as aggregate from `users` where `phone` = 0503795394
+
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0239035338
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0788559380
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1232@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0908364475
+
+
+/omicall
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0767290592
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (c556c627-e6d7-4db0-8a6a-4b12903e455e, testvanhieubn1234@gmail.com, 0767290592, Nguy·ªÖn VƒÉn, y$HhnlHBH0r8R0FH/V0W2d2e8QCNdBaBay2JmweLtzaqFpzX6Ugr8PK, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:12:18, 2023-01-05 08:12:18)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0844115859
+select count(*) as aggregate from `users` where `phone` = 0822439089
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (c181f06b-5bac-43dc-ae33-84e40a0e3270, testvanhieubn1234@gmail.com, 0844115859, Nguy·ªÖn VƒÉn, y$tL8oL.QgKzshEuTDutYBi.YYyVQunAUHkn22HV1U0uxxTlOsIdhqC, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:12:18, 2023-01-05 08:12:18)
+
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (8b5b806b-ae20-483d-9c51-a4dacadeb38c, testvanhieubn1234@gmail.com, 0822439089, Nguy·ªÖn VƒÉn, y$QgLYjGYBWrafK7evNIcuoeL2/s1mGfeoCYmrAo.QKN75QKnXAysJm, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:12:18, 2023-01-05 08:12:18)
+
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0924469507
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (6b0bea6e-ec46-42a5-bb46-19f67d54e50b, testvanhieubn1234@gmail.com, 0924469507, Nguy·ªÖn VƒÉn, y$kDhRXqrOZSUbq.3RK9lh8.TZ/adFylNBWXZDTAnp5OVfEhJQmhCCq, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:12:18, 2023-01-05 08:12:18)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0254736797
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (aa0f23cc-8ba5-47f1-85b8-ef235e992399, testvanhieubn1234@gmail.com, 0254736797, Nguy·ªÖn VƒÉn, y$msBDbW0npVzLeZ23Noynpupp9F5SbywICgeyvFqRJazntdI7mVn/i, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:12:18, 2023-01-05 08:12:18)
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0442518574
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (2f4d1fc5-c3e9-4c42-82d0-0a4352d906d7, testvanhieubn1234@gmail.com, 0442518574, Nguy·ªÖn VƒÉn, y$/n4s75SkSTw5.jT4MA9MTegHY1Q9J7zgPwYbDpCP3DfRd5AHL/3K., Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:12:18, 2023-01-05 08:12:18)
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0365514335
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0948500536
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0594232853
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0444821262
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0954883326
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0599739308
+
+
+/api/auth/register
+select count(*) as aggregate from `users` where `email` = testvanhieubn1234@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0653495293
+
+
+/omicall
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+
+
+
+
+
+
+
+
+
+
+/api/auth/register
+/api/auth/register
+/api/auth/register
+/api/auth/register
+
+
+
+
+
+
+/api/auth/register
+
+
+
+
+/api/auth/register
+/api/auth/register
+
+
+
+
+select count(*) as aggregate from `users` where `email` = testvanhieubn1235@gmail.com
+select count(*) as aggregate from `users` where `phone` = 0659950727
+insert into `users` (`uuid`, `email`, `phone`, `first_name`, `password`, `last_name`, `address`, `dob`, `gender`, `updated_at`, `created_at`) values (7b928f39-dff7-4791-94af-c7cb7fc20e66, testvanhieubn1235@gmail.com, 0659950727, Nguy·ªÖn VƒÉn, y$uMMA8NAVNHTMX8V05QqVXOTB7yHgpY3wvZduoso6dzx/V1mYdXn/K, Hi·∫øu, T·ª´ S∆°n - B·∫Øc Ninh, 2022-07-12, 0, 2023-01-05 08:13:20, 2023-01-05 08:13:20)
+
+

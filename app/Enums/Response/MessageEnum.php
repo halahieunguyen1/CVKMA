@@ -18,5 +18,6 @@ class MessageEnum extends AbstractEnum
     final const JOB_IS_EXPIRED = 'Tin tuyển dụng đã hết hạn nộp hồ sơ';
     const LIMIT_TIME_APPLY = 'Bạn vừa mới gửi CV ứng tuyển tin tuyển dụng. Vui lòng đợi %s để gửi CV ứng tuyển lần tiếp theo';
     final const COMPANY_NOT_EXISTS = 'Công ty không tồn tại';
+    final const ACCOUNT_CREATING = 'Tài khoản đang được tạo, vui lòng không spam';
 
 }
